@@ -27,7 +27,7 @@ if __FILE__ == $0
 
   result = ERB.new(TEMPLATE, nil, '-').result(binding)
 
-  entry = File.join('_posts', fname)
+  entry = File.join('_drafts', fname)
 
   File.open(entry, 'w') { |f| f << result }
   puts "#{entry}"
