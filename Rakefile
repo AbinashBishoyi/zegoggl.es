@@ -3,7 +3,7 @@ task :default => :server
 
 desc "deploy"
 task :deploy => [ :clean, :build ] do
-  sh "rsync -var  --checksum  _site/ zegoggles.com:/var/www/zegoggles.com"
+  sh "rsync -var  --checksum  _site/ zegoggl.es:/var/www/zegoggles.com"
 end
 
 task :build do
