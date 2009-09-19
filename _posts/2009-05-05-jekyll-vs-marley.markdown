@@ -28,3 +28,14 @@ a breeze with auto-regeneration of pages and the integrated webrick support.
 There's another review on
 [oiledmachine.com](http://www.oiledmachine.com/posts/2008/12/27/overview-of-jekyll--a-static-site-generator-written-in-ruby.html)
 if you want to know more and a port called [hyde](http://github.com/lakshmivyas/hyde/), for those who prefer python.
+
+Update (19/09/09):
+
+Henrik's fork of jekyll is slightly out of date, if you want to use haml with a more recent version of jekyll (0.5.4 at the moment) use my fork instead: [github.com/jberkel/jekyll](http://github.com/jberkel/jekyll/), also installable as a gem:
+
+<pre>
+  <code class="bash">
+  $ gem sources -a http://gems.github.com
+  $ sudo gem install jberkel-jekyll
+  </code>
+</pre>
