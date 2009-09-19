@@ -2,9 +2,14 @@
   title: "developing on android"
 ---
 
+
+
+
+
+
 Good
 
-usability
+
 apis (activity, intents > [open intents](http://www.openintents.org/en/))
 open source, lots of free apps
 runs jvm/dalvik: scala, jruby (ruboto), clojure
@@ -18,6 +23,7 @@ active hacker community (custom firmwares, jf,
 
 Bad
 
+usability
 build from source problems
 [marketplace](http://larvalabs.com/blog/iphone/android-market-sales/)
 
