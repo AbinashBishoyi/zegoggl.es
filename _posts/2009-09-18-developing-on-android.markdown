@@ -26,9 +26,9 @@ The most recent version of the SDK (1.6, still in developer beta) addresses some
 Android has its own custom JVM implementation called Dalvik, which is heavily optimised for mobile devices (low memory footprint, process isolation). Unfortunately it doesn't support JIT or AOT compilation at the moment (although they have stated
 "[We do plan to include JIT and/or AOT compilation in a future release"](http://groups.google.com/group/android-framework/browse_thread/thread/bef4f5f588aef15f)).
 
-This might not be a problem for simple apps like TODO lists etc. but don't expect anything CPU intensive to run smoothly on this device. I tried port [jsidplay](http://jsidplay2.sourceforge.net/) (a Java library which emulates SID, the sound chip used in the old Commodore 64) to Android and quickly gave up after listening to the first results, it was just to slow and produced choppy playback.
+This might not be a problem for simple apps like TODO lists etc. but don't expect anything CPU intensive to run smoothly on this device. I tried to port [jsidplay](http://jsidplay2.sourceforge.net/) (a Java library which emulates SID, the sound chip used in the old Commodore 64) to Android and quickly gave up after listening to the first results, it was just to slow and produced choppy playback.
 
-Similarly the [JavaGB](https://sourceforge.net/projects/javagb/) project (open source Java Game Boy emulator) abandoned the Android version because of the missing JIT compiler.
+Similarly the [JavaGB](https://sourceforge.net/projects/javagb/) project (open source Java Game Boy emulator) abandoned the Android version because of the missing JIT compilation.
 
 So in the meantime the only way to get reasonable performance out of Android is to go native (C/C++), using the [Android NDK](http://developer.android.com/sdk/ndk/1.5_r1/index.html), which ultimately means trading ease of development for speed.
 
@@ -93,7 +93,7 @@ The SDK ships with a lot of tools, my favourite is the Dalvik Debug Monitor Serv
 
 It lets you monitor pretty much everything happening on a running device (or emulator), CPU load, memory allocation, logging output etc.
 
-Android projects are by default built using ant, but it's very easy to use Rake instead ([Andrake](http://github.com/remi/andrake/), [hello world with rake](http://github.com/jberkel/android-helloworld-rake)). If you prefer developing in an IDE, there are plugins available for most common ones
+Android projects are by default built using ant, but it's very easy to use Rake instead ([Andrake](http://github.com/remi/andrake/), [hello world with rake](http://github.com/jberkel/android-helloworld-rake)). If you prefer developing in an IDE, there are plugins available for most the common ones
 ([Intellij IDEA](http://code.google.com/p/idea-android/), [Eclipse](http://source.android.com/using-eclipse), [Netbeans](http://kenai.com/projects/nbandroid)).
 
 ### Community
