@@ -1,0 +1,18 @@
+/* keep font size */
+#dsq-content {
+  font-size: 100%;
+}
+
+#dsq-commentscount {
+  font-size: 100%;
+}
+
+/* don't display options and rss icon */
+#dsq-content #dsq-options {
+  display: none; 
+}
+
+span.dsq-item-feed { 
+  display:none; 
+}
+
