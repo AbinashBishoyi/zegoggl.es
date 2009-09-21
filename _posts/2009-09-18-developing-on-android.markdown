@@ -17,28 +17,28 @@ What follows is a mini-review, highlighting the good & bad points from my perspe
 
 While Android's inner workings might be well engineered, Google sucks at user experience design. For example, in the Android Market you can browse through a list of featured applications by sliding your finger over the display. The name of the focused application is located under the row of icons, exactly where you're finger is normally placed to scroll through the list, making it very cumbersome to use. Why not just put it above the icons so you can read it while you browse ? 
 
-The Android Market, the main place to install new software and therefore quite an important application is pretty crap. Apps are listed in completely useless or arbitrary categories (Health, Lifestyle, Productivity) and don't provide any screen shots. The text-based search interface is rudimentary (no spell suggestion, only exact queries will match), quite embarrassing, for a company like Google which should know how to implement good search functionality.   
+The Android Market, the main place to install new software and therefore quite an important application is pretty crap. Apps are listed in completely useless or arbitrary categories (Health, Lifestyle, Productivity) and don't provide any screen shots. The text-based search interface is rudimentary (no spelling suggestion, only exact queries will match), quite embarrassing for a company like Google which should know how to implement good search functionality.   
 
-The most recent version of the SDK (1.6, still in developer beta) addresses some of these issues: [Android Market Updates in 1.6](http://developer.android.com/sdk/android-1.6-highlights.html#AndroidMarketUpdates).
+The most recent version of the SDK (1.6, still in developer beta) addresses at least some of these issues: [Android Market Updates in 1.6](http://developer.android.com/sdk/android-1.6-highlights.html#AndroidMarketUpdates).
 
 ### Performance
 
 Android has its own custom JVM implementation called Dalvik, which is heavily optimised for mobile devices (low memory footprint, process isolation). Unfortunately it doesn't support JIT or AOT compilation at the moment (although they have stated
 "[We do plan to include JIT and/or AOT compilation in a future release"](http://groups.google.com/group/android-framework/browse_thread/thread/bef4f5f588aef15f)).
 
-This might not be a problem for simple apps like TODO lists etc. but don't expect anything CPU intensive to run smoothly on this device. I tried to port [jsidplay](http://jsidplay2.sourceforge.net/) (a Java library which emulates SID, the sound chip used in the old Commodore 64) to Android and quickly gave up after listening to the first results, it was just to slow and produced choppy playback.
+This might not be a problem for simple apps like TODO lists etc. but don't expect anything CPU intensive to run smoothly on this device. I tried to port [jsidplay](http://jsidplay2.sourceforge.net/) (a Java library which emulates SID, the sound chip used in the old Commodore 64) to Android and quickly gave up after listening to the first results, it was just too slow and produced choppy playback.
 
 Similarly the [JavaGB](https://sourceforge.net/projects/javagb/) project (open source Java Game Boy emulator) abandoned the Android version because of the missing JIT compilation.
 
-So in the meantime the only way to get reasonable performance out of Android is to go native (C/C++), using the [Android NDK](http://developer.android.com/sdk/ndk/1.5_r1/index.html), which ultimately means trading ease of development for speed.
+So in the meantime the only way to get reasonable performance out of Android is to go native (C/C++) using the [Android NDK](http://developer.android.com/sdk/ndk/1.5_r1/index.html), which ultimately means trading ease of development for speed.
 
 ### Building everything from source
 
-I've already mentioned that the whole platform being released as open source (Apache Software License, to be specific) was one of the reasons why I picked Android over other systems. So one of the first things I tried after getting my Google dev phone was to replace the pre-installed firmware with a new version entirely compiled from source, following the instructions ("[Building For Dream](http://source.android.com/documentation/building-for-dream)"). It turns out that it's actually very difficult to produce a usable image which is comparable to the one shipped with the device, binary drivers need to be extracted from the phone and the build process itself is very complicated.
+I've already mentioned that the whole platform being released as open source (Apache Software License) was one of the reasons why I picked Android over other systems. So one of the first things I tried after getting my Google dev phone was to replace the pre-installed firmware with a new version entirely compiled from source, following the instructions ("[Building For Dream](http://source.android.com/documentation/building-for-dream)"). It turns out that it's actually very difficult to produce a usable image which is comparable to the one shipped with the device, binary drivers need to be extracted from the phone and the build process itself is very complicated.
 
 ### No Multitouch
 
-By default Android doesn't support multitouch gestures. Apparently there is support for it in the codebase but it got disabled on Apple's request (legal/ patent issues?). There are some unofficial firmwares floating around which re-enable it, but I haven't actually tried them out.
+By default Android doesn't support multitouch gestures. Apparently there is support for it in the codebase but it got disabled on Apple's request (legal/patent issues?). There are some unofficial firmwares floating around which re-enable it, but I haven't actually tried them out.
 
 ### Gdata api integration
 
