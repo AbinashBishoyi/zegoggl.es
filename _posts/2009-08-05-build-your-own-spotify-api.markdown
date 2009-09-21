@@ -31,18 +31,18 @@ playlist, say by consuming data from another music service API? Sorry. Impossibl
 From a technical perspective Spotify's decisions are understandable: a proprietary desktop client offers more control, especially given
 that their business model is based on advertising which needs to be displayed to the user. Of course, this didn't stop some members 
 of [#hack.se](http://demo.hack.se/) from reverse-engineering the P2P-protocol. So earlier this year [despotify](http://despotify.se/) was released,
-an open-source (C-based) library which made it possible to access Spotify's service without the offical client. Spotify reacted by blocking free
-(ad-supported) despotify users. However, the success of despotify encouraged more people to get involved in reverse-engineering - there're now at least three different
+an open-source (C-based) library which made it possible to access Spotify's service without the official client. Spotify reacted by blocking free
+(ad-supported) despotify users. However, the success of despotify encouraged more people to get involved in reverse-engineering - there are now at least three different
 active projects.
 
 While writing my last blog post (<a href="/2009/07/100-records-that-set-the-world-on-fire-(while-no-one-was-listening).html">100 records...</a>)
-I spent most of the time manually searching Spotify urls for the albums and artists in the playlists, a boring job a program could have done in a matter of 
+I spent most of the time manually searching Spotify URLs for the albums and artists in the playlists, a boring job a program could have done in a matter of 
 seconds.
 
 So I took another look at the existing open-source libraries and found [jotify](http://jotify.felixbruns.de/), which is currently the most advanced
 implementation (it supports the feature I was looking for, creation of playlists). It is written in Java, so it was very easy to use integrate
 in JRuby. I decided to use sinatra to give it a rest-based API so it can be used from other services. The result is 
-[spotify-api](http://github.com/jberkel/spotify-api/), a json-speaking API for spotify. Like despotify it needs a
+[spotify-api](http://github.com/jberkel/spotify-api/), a JSON-speaking API for spotify. Like despotify it needs a
 [premium](http://www.spotify.com/en/products/premium/) account to work, but I'm happy to pay for a service without ads *and* an API.
 
 The API is not complete and it's the first release, but it's all there is until the "official" API arrives (if it does at all, it has been announced/promised

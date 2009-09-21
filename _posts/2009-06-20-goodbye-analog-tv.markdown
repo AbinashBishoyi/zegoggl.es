@@ -4,7 +4,7 @@
 
 The 12th of June 2009 marked the end for analog television in the Unites
 States. On that day all American TV stations switched their analog signals off.
-The Federal Communications Comission (FCC) had decided that analog's time was over in what could be called a forced upgrade. They are now able to sell
+The Federal Communications Commission (FCC) had decided that analog's time was over in what could be called a forced upgrade. They are now able to sell
 the unused frequencies in the analog spectrum, most likely for digital transmissions protocols like mobile broadband.
 
 Can this switch be called historic? I don't know, but some more relicts of the analog area are going to disappear. After the test card (when TV broadcasting moved to a 24/7 schedule) the next thing from the 20th century to go will be the white screen of static.
@@ -15,10 +15,10 @@ Can this switch be called historic? I don't know, but some more relicts of the a
 
 >The sky above the port was the color of television, tuned to a dead channel. 
 
-This famous opening parapraph from the science-fiction novel "Neuromancer" by William Gibson sounds very out of date now. Glitchy 
+This famous opening paragraph from the science-fiction novel "Neuromancer" by William Gibson sounds very out of date now. Glitchy 
 and chopped up playback (as seen with damaged DVDs) have replaced the grainy static snow.
 
-The analog to digitial switchover hasn't really made news - most people I asked were not aware that it happended. I read about
+The analog to digital switchover hasn't really made news - most people I asked were not aware that it happened. I read about
 it on [rhizome.org](http://rhizome.org), a web site dedicated to new media art which commented on the use of YouTube to document the switchover:
 
 >There is something curiously surreal about these grainy videos of television screens switching to static, taped in people's homes on 

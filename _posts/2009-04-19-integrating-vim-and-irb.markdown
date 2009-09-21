@@ -18,7 +18,7 @@ In his blog post he says:
 The technique itself is older, there's a blog post dating back to October 2007 titled
 "[Use vi (Or Any Text Editor) From Within irb](http://gilesbowkett.blogspot.com/2007/10/use-vi-or-any-text-editor-from-within.html)".
 And, of course, all the LISPers will point out that there's nothing new about it ([slime](http://common-lisp.net/project/slime/) etc.). 
-Bunch of arrgogant 'i-told-you-so'-s :).
+Bunch of arrogant 'i-told-you-so'-s :).
 
 I tried it out and completely agree, it's an incredibly powerful way for doing some quick, explorative coding for all those cases
 where you don't want to write specs upfront (maybe because you're not quite sure of what you're actually trying to achieve). 
@@ -44,7 +44,7 @@ any other editor, it's fairly easy to customise.
 
 To improve the edit-irb workflow in vim a bit I use a modified version of [mksession.vim](http://gist.github.com/97573), 
 which saves the current state of the editor (line number etc.) just before going back to irb. So when you fix a bug and go back 
-to vi you can carry on working exactely where you left off. Put it somewhere (for example ~/.vim) and add the line "runtime 
+to vi you can carry on working exactly where you left off. Put it somewhere (for example ~/.vim) and add the line "runtime 
 mksession.vim" to your .vimrc.
 
 So don't be an idiot and use this technique :)

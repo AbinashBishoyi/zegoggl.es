@@ -26,7 +26,7 @@ Here's the function definition for execlp:
   </code>
 </pre>
 
-A string (*file*), another string (*arg0*) followed by varargs (...), follwowed by NULL, returning int.
+A string (*file*), another string (*arg0*) followed by varargs (...), followed by NULL, returning int.
 This translates into the following FFI glue code:
 
 <pre>

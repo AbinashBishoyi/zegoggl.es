@@ -1,5 +1,5 @@
 --- 
-title: "guerilla: the taking of Patty Hearst"
+title: "guerrilla: the taking of Patty Hearst"
 categories: 
 - music
 - pop
@@ -29,7 +29,7 @@ a documentary made in 2005.
   <img src="http://upload.wikimedia.org/wikipedia/en/3/35/Patty_Hearst.jpg" class="left-img"/>
 </a>
 
-The 'war against terror' caused a renewed interest in 70s american terrorist
+The 'war against terror' caused a renewed interest in 70s American terrorist
 group such as the Symbionese Liberation Army (SLA). Some of the (now quite old) members of the SLA 
 recently got convicted, which led to the production of the documentary.
 

@@ -2,7 +2,7 @@
   title: "twitter dreams part 3: animals, zombies & pigs"
 ---
 
-Ok, after looking at [celebrities](/2009/05/twitter-dreams-part-2:-celebrities.html) two other types of dreams stood out:
+OK, after looking at [celebrities](/2009/05/twitter-dreams-part-2:-celebrities.html) two other types of dreams stood out:
 those involving animals and mythical creatures. Below you'll see the distribution of the most common animals in dreams reported on twitter.
 Lots of cats, snakes and fishes!
 

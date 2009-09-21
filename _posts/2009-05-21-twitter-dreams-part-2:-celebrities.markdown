@@ -12,7 +12,7 @@ Barack Obama, Miley Cyrus, Zac Efron.
 <img src="http://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Mileydog.PNG/180px-Mileydog.PNG" alt="Miley Cyrus" class="left-img"/>
 </a>
 
-Britney Spears, John Mayer and Ophra Winfrey.
+Britney Spears, John Mayer and Oprah Winfrey.
 
 What do they have in common? They are appear very frequently in dreams, at least in those written down on 
 [twitter](/2009/05/twitter-dreams-part-1:-introduction.html). The data was obtained by feeding data from twitter searches (courtesy 
