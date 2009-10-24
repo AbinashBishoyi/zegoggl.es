@@ -93,7 +93,7 @@ The SDK ships with a lot of tools, my favourite is the Dalvik Debug Monitor Serv
 
 It lets you monitor pretty much everything happening on a running device (or emulator), CPU load, memory allocation, logging output etc.
 
-Android projects are by default built using ant, but it's very easy to use Rake instead ([Andrake](http://github.com/remi/andrake/), [hello world with rake](http://github.com/jberkel/android-helloworld-rake)). If you prefer developing in an IDE, there are plugins available for most the common ones
+Android projects are by default built using ant, but it's very easy to use Rake instead ([Andrake](http://github.com/remi/andrake/), [hello world with rake](http://github.com/jberkel/android-helloworld-rake)). If you prefer developing in an IDE, there are plugins available for the most common ones
 ([Intellij IDEA](http://code.google.com/p/idea-android/), [Eclipse](http://source.android.com/using-eclipse), [Netbeans](http://kenai.com/projects/nbandroid)).
 
 ### Community
