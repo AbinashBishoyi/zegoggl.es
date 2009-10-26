@@ -1,5 +1,5 @@
 --- 
-title: "chaosradio express 119: kaffee"
+title: "Chaosradio Express 119: Kaffee"
 categories: 
 layout: post
 ---

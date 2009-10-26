@@ -1,5 +1,5 @@
 ---
-  title: "build your own spotify api"
+  title: "Build your own Spotify API"
 ---
 
 Last month I attended the first [music hack day](http://musichackday.org/), held at the Guardian offices in London. It was a great

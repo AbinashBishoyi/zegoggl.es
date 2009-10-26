@@ -1,5 +1,5 @@
 ---
-  title: "goodbye analog tv"
+  title: "Goodbye analog TV"
 ---
 
 The 12th of June 2009 marked the end for analog television in the Unites

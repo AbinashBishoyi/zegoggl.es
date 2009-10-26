@@ -1,5 +1,5 @@
 ---
-  title: ruby-ffi recipes
+  title: Ruby-FFI recipes
   published: true
 ---
 

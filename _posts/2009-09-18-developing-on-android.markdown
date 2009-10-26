@@ -1,5 +1,5 @@
 ---
-  title: "developing on android"
+  title: "Developing on Android"
 ---
 
 <img src="/images/android_skate.png" alt="Android Market" class="left-img" height="90" width="90"/>

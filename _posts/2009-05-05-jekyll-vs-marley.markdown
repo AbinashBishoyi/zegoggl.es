@@ -1,5 +1,5 @@
 ---
-  title: jekyll vs marley
+  title: Jekyll vs Marley
 ---
 
 I really tried to like [marley](/2009/03/setting-up-marley.html), but in the

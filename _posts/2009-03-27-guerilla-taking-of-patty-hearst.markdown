@@ -1,5 +1,5 @@
 --- 
-title: "guerrilla: the taking of Patty Hearst"
+title: "Guerrilla: the taking of Patty Hearst"
 categories: 
 - music
 - pop

@@ -1,5 +1,5 @@
 ---
-  title: "twitter dreams part 3: animals, zombies & pigs"
+  title: "Twitter dreams part 3: animals, zombies & pigs"
 ---
 
 OK, after looking at [celebrities](/2009/05/twitter-dreams-part-2:-celebrities.html) two other types of dreams stood out:

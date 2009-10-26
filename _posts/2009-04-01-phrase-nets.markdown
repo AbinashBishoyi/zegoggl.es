@@ -1,5 +1,5 @@
 --- 
-title: "new visualisation technique: phrase nets"
+title: "New visualisation technique: phrase nets"
 categories: 
 - infoviz
 - manyeyes

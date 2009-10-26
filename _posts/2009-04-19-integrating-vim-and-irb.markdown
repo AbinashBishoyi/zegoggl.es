@@ -1,5 +1,5 @@
 --- 
-title: integrating vim and irb
+title: Integrating vim and irb
 categories: 
 - ruby
 - irb

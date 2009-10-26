@@ -1,5 +1,5 @@
 --- 
-title: setting up marley
+title: Setting up marley
 categories: 
 - ruby
 - git

@@ -1,5 +1,5 @@
 ---
-  title: "twitter dreams part 1: introduction"
+  title: "Twitter dreams part 1: introduction"
 ---
 
 Twitter has sometimes been described as a new form of collective, connected consciousness, some people compare 

@@ -1,21 +1,21 @@
 --- 
-title: the world's questions... many eyes on google suggest.
+title: The world's questions... many eyes on Google suggest.
 categories: 
 - infoviz
 - google
 layout: post
 ---
 
-Visualising results from google suggest.
+Visualising results from Google suggest.
 
 I've been meaning to play around with the [google suggest api](http://blogoscoped.com/archive/2006-08-17-n22.html) 
 for quite a while, and was also quite curious about IBM's collaborative visualisation platform 
 [many eyes](http://manyeyes.alphaworks.ibm.com/). 
 
-Google suggest has been around for a long time (as part of google labs), but only recently got 
-integrated by default into google search (["At a loss for
+Google suggest has been around for a long time (as part of Google labs), but only recently got 
+integrated by default into Google search (["At a loss for
 words?"](http://googleblog.blogspot.com/2008/08/at-loss-for-words.html)). It's a fascinating data source, because it 
-reflects how (at least the majority) of users interact with google. See 
+reflects how (at least the majority) of users interact with Google. See 
 ["An Expirement (sic) with Google Suggest"](http://digg.com/tech_news/An_Expirement_with_Google_Suggest) for some
  (sometimes scary) examples.
 
