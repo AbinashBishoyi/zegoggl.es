@@ -12,6 +12,7 @@ end
 TEMPLATE = <<END
 ---
   title: "<%= title %>"
+  published: false
 ---
 
 Write me...  [This is a link](http://somewhere.com/foo)
@@ -27,7 +28,7 @@ if __FILE__ == $0
 
   result = ERB.new(TEMPLATE, nil, '-').result(binding)
 
-  entry = File.join('_drafts', fname)
+  entry = File.join('_posts', fname)
 
   File.open(entry, 'w') { |f| f << result }
   puts "#{entry}"

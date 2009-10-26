@@ -1,5 +1,6 @@
 ---
-  title: "the end of rss, what next?"
+  title: "The end of RSS, what next?"
+  published: false
 ---
 
 

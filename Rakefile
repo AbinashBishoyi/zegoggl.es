@@ -3,6 +3,7 @@ require 'time'
 
 task :default => :server
 
+desc "build the site"
 task :build do
   sh "jekyll"
 end
