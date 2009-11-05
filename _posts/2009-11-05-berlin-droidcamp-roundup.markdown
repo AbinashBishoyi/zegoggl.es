@@ -1,5 +1,5 @@
 ---
-  title: "Berlin droidcamp roundup"
+  title: "Droidcamp Berlin roundup"
   published: true
 ---
 
