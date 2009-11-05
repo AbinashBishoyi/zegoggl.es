@@ -37,7 +37,7 @@ end
 
 desc "spellcheck last post"
 task :check do
-  sh "aspell", "--mode", "html", "check", last_post
+  sh "aspell", "--mode", "html", "--dont-backup", "check", last_post
 end
 
 def extract_date(fname)
