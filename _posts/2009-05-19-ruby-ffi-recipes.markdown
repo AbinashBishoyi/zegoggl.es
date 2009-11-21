@@ -31,7 +31,7 @@ This translates into the following FFI glue code:
 
 <pre>
   <code>
-  Module Exec
+  module Exec
     extend FFI::Library
     attach_function :execlp, [:string, :string, :varargs], :int        
   end
@@ -67,7 +67,7 @@ Which translates to:
 
 <pre>
   <code>
-  Module Exec
+  module Exec
     extend FFI::Library
     attach_function :execvp, [:string, :pointer], :int
   end
