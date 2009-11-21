@@ -1,6 +1,6 @@
 ---
   title: "Build Android apps in Scala with sbt"
-  published: true
+  published: false
 ---
 
 If you're thinking about developing Android apps in Scala there are not that many different options for building your project - I started out with a was quickly cobbled together Rakefile [(source)](http://github.com/jberkel/android-helloworld-scala/blob/master/Rakefile), then there are some ways to get Eclipse to build your project, as documented on the [Novoda blog](http://www.novoda.com/blog/?p=154). I personally don't use Eclipse, and Scala itself is in contrast to Java usable in a normal text editor, mainly because it requires a lot less typing and boiler plate code. 
@@ -49,7 +49,24 @@ The main advantage of using Ivy as a dependency manager is that you declare your
 
 This declared a dependency to the module "scalatest" (a Scala test framework), using version 1.0 in the test configuration.
 
+<pre>
+  <code class="scala">
+  package com.foo.test
 
+  import _root_.android.app.Activity
+  import _root_.android.os.Bundle
+  import _root_.android.widget.TextView
+
+  class MainActivity extends Activity with Foo {
+    override def onCreate(savedInstanceState: Bundle) {
+      super.onCreate(savedInstanceState)
+      setContentView(new TextView(this) {
+        setText("Hello Android, I'm Scala!")                    
+      })
+    }
+  }
+  </code>
+</pre>
 
 
 
