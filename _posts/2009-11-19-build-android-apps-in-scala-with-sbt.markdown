@@ -1,6 +1,6 @@
 ---
   title: "Build Android apps in Scala with sbt"
-  published: false
+  published: true
 ---
 
 If you're thinking about developing Android apps in Scala there are not that many different options for building your project - I started out with a was quickly cobbled together Rakefile [(source)](http://github.com/jberkel/android-helloworld-scala/blob/master/Rakefile), then there are some ways to get Eclipse to build your project, as documented on the [Novoda blog](http://www.novoda.com/blog/?p=154). I personally don't use Eclipse, and Scala itself is in contrast to Java usable in a normal text editor, mainly because it requires a lot less typing and boiler plate code. 
@@ -30,12 +30,77 @@ To get started with new projects sbt already ships with a generator which will s
 <pre>
   <code class="bash">
   $ git clone git://github.com/jberkel/android-plugin.git
-  $ android-plugin/contrib/create_android_project --project Test --package com.example.android
+  $ cd android-plugin && sbt publish-local # installs sbt locally
+  $ contrib/create_android_project --project Test --package com.example.android
   </code>
 </pre>  
 
 This will create a fully usable Android project with one activity which can build and and install a Hello World app.
- 
+
+
+The generated directory layout follows maven conventions:
+
+<pre>
+  <code class="bash">
+    |-- project
+    |   |-- build
+    |   |   `-- Project.scala
+    |   |-- build.properties
+    |   `-- plugins
+    |       `-- Plugins.scala
+    |-- src
+    |   |-- main
+    |   |   |-- AndroidManifest.xml
+    |   |   |-- assets
+    |   |   |-- java
+    |   |   |-- res
+    |   |   |   |-- drawable
+    |   |   |   |-- layout
+    |   |   |   |-- values
+    |   |   |   `-- xml
+    |   |   `-- scala
+    |   |       `-- activity.scala
+    |   `-- test
+    |       `-- scala
+    |           `-- spec.scala
+    `-- tests
+  </code>
+</pre>
+
+The sbt build configuration is in the project directory, source code and unit tests in src, tests is used for Android integration testing (more on that later).
+
+###Build configuration
+
+The main project build information is contained in the file project/build/project.scala: 
+
+<pre>
+  <code class="scala">
+  import sbt._
+
+  class Test(info: ProjectInfo) extends ParentProject(info) {
+    override def shouldCheckOutputDirectories = false
+
+    lazy val main = project(".", "main", new MainProject(_))
+    lazy val tests = project("tests",  "tests", new TestProject(_), main)
+
+    class Defaults(info: ProjectInfo) extends AndroidProject(info) {
+      override def androidSdkPath = Path.fromFile("/projects/android-sdk-mac_x86-1.6_r1")
+    }
+
+    class MainProject(info: ProjectInfo) extends Defaults(info) {    
+      val scalatest = "org.scalatest" % "scalatest" % "1.0" % "test->default"
+    }
+
+    class TestProject(info: ProjectInfo) extends Defaults(info) {
+      override def proguardInJars = Path.emptyPathFinder
+      lazy val runTest = defaultAdbTask(true, "shell am instrument -w "+manifestPackage+
+      "/android.test.InstrumentationTestRunner") describedAs("runs instrumentation tests")        
+    } 
+  }
+  </code>     
+</pre>
+
+The class Test extends ParentProject, which is a special sbt construct for supporting multiple projects in one single file ([subproject documentation](http://code.google.com/p/simple-build-tool/wiki/SubProjects)). This is necessary because Android integration tests have to be build and installed as a separate apk package. 
 
 ###Dependency management
 
@@ -47,26 +112,29 @@ The main advantage of using Ivy as a dependency manager is that you declare your
   </code>
 </pre>   
 
-This declared a dependency to the module "scalatest" (a Scala test framework), using version 1.0 in the test configuration.
+This declares a dependency to the module "scalatest" (a Scala test framework), using version 1.0 in the test configuration. A configuration in Ivy works similar to scopes in Maven, so you can distinguish between build and runtime dependencies. 
+
+###Hello Android
+
+Besides creating the necessary directory structure for building Scala projects the generator script has also created a simple "Hello World"-style activity, which can be found in src/main/scala/activity.scala.
+
+In order to build the full package, use the package-debug sbt action:
 
 <pre>
-  <code class="scala">
-  package com.foo.test
-
-  import _root_.android.app.Activity
-  import _root_.android.os.Bundle
-  import _root_.android.widget.TextView
-
-  class MainActivity extends Activity with Foo {
-    override def onCreate(savedInstanceState: Bundle) {
-      super.onCreate(savedInstanceState)
-      setContentView(new TextView(this) {
-        setText("Hello Android, I'm Scala!")                    
-      })
-    }
-  }
+  <code class="bash">
+  $ sbt package-debug      # build packages
+  $ sbt reinstall-emulator # install in emulator
   </code>
 </pre>
+
+This will download all dependencies (only on first build), then compile and build the packages (target/main-0.1.apk, tests/target/tests-0.1.apk). It is worth noting that sbt has two different modes of operation: interactive and command-line. If invoked without action arguments, the interactive session will be launched, which saves start-up time and is quite useful in general.
+
+It's probably easiest to demonstrate the whole process in a screencast.
+
+
+
+
+
 
 
 
