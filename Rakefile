@@ -54,7 +54,7 @@ end
 desc "push to git repo(s)"
 task :push do
   ensure_committed
-  sh "git push"
+  sh "git push" 
   sh "git push github"
 end
 
@@ -98,6 +98,15 @@ task :rename do
   end
 end
 
+task :set_date do
+  ensure_committed  
+  old_post = ENV['POST'] || last_post
+  m, cats, date, slug, ext = *old_post.match(POST_REGEXP)                
+  tstamp = ENV['TIMESTAMP'] || Time.now.strftime('%Y-%m-%d')  
+  new_file = File.join('_posts', "#{tstamp}-#{slug}#{ext}")    
+  sh "git mv #{old_post} #{new_file}" unless old_post == new_file
+end
+
 desc "new post"
 task :post do
   title = ENV['TITLE'] || begin
@@ -127,7 +136,7 @@ end
 
 def ensure_committed
   system "git diff --quiet HEAD"
-  raise "uncommited changes detected, please commit your changes first!" unless $?.success?
+  raise "uncommited changes detected, please commit your changes first!" unless ($?.success? || ENV['FORCE'])
 end
 
 def extract_date(fname)
