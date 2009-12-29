@@ -153,7 +153,8 @@ Sbt will automatically recompile the project definition (even when in interactiv
 
 ###1,2,3 testing
 
-Sbt has built-in support for most common Scala testing frameworks (ScalaCheck, specs, ScalaTest). It automatically detects the framework you are using in your project, usually "sbt test" will do the Right Thing. The example project set up by the script defaults to [ScalaTest](http://www.scalatest.org/).
+Sbt has built-in support for most common Scala testing frameworks (ScalaCheck, specs, ScalaTest). It automatically detects the framework you are using in your project, usually "sbt test" will do the Right Thing. The example project set up by the script defaults to [ScalaTest](http://www.scalatest.org/). ScalaTest has excellent BDD support, with a DSL similar to rspec's. However, the built-in test support will execute in the host JVM so  
+
 
 Another nifty feature is continuous compilation / testing. When you prefix any command with a tilde (~), sbt will automatically trigger the action as soon as one of the source files changes, which is very useful when doing test-driven development.
 

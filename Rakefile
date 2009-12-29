@@ -4,21 +4,15 @@ POST_REGEXP = /^(.+\/)*(\d+-\d+-\d+(?:_\d+-\d+)?)-(.*)(\.[^.]+)$/
 
 module Slugalizer
   extend self
-  SEPARATORS = %w[- _ +]
-  
+  SEPARATORS = %w[- _ +]  
   def slugalize(text, separator = "-")
-    unless SEPARATORS.include?(separator)
-      raise "Word separator must be one of #{SEPARATORS}"
-    end
+    raise "Word separator must be one of #{SEPARATORS}" unless SEPARATORS.include?(separator)
     re_separator = Regexp.escape(separator)
-    result = text.dup.to_s
-    
-    result.gsub!(/[^\x00-\x7F]+/, '')                      # Remove non-ASCII (e.g. diacritics).
-    result.gsub!(/[^a-z0-9\-_\+]+/i, separator)            # Turn non-slug chars into the separator.
-    result.gsub!(/#{re_separator}{2,}/, separator)         # No more than one of the separator in a row.
-    result.gsub!(/^#{re_separator}|#{re_separator}$/, '')  # Remove leading/trailing separator.
-    result.downcase!
-    result
+    text.to_s.gsub(/[^\x00-\x7F]+/, '').                   # Remove non-ASCII (e.g. diacritics).
+           gsub(/[^a-z0-9\-_\+]+/i, separator).            # Turn non-slug chars into the separator.
+           gsub(/#{re_separator}{2,}/, separator).         # No more than one of the separator in a row.
+           gsub(/^#{re_separator}|#{re_separator}$/, '').  # Remove leading/trailing separator.
+           downcase
   end
 end
 
@@ -49,9 +43,7 @@ end
 
 desc "push to git repo(s)"
 task :push do
-  system "git diff --quiet HEAD"
-  raise "uncommited changes detected, commit first!" unless $?.success?
-
+  ensure_committed
   sh "git push"
   sh "git push github"
 end
@@ -63,34 +55,44 @@ end
 
 desc "renames last blog post"
 task :rename do
-  post = IO.read(last_post)
+  ensure_committed
+  
+  old_post = ENV['POST'] || last_post  
+  post = IO.read(old_post)
   if post =~ /^(---\s*\n.*?\n?)(---.*?\n)/m    
     content = post[($1.size + $2.size)..-1]
     data = YAML.load($1) || {}
     
-    if data['title']
-      puts "old '#{data['title']}'"
-      new_title = "A new title"
+    if data['title']      
+      new_title = ENV['TITLE'] || begin
+        puts "old title: '#{data['title']}'\nEnter new title:"
+        STDIN.gets.strip
+      end
       
       data['title'] = new_title
       new_slug = Slugalizer.slugalize(new_title)
       
-      m, cats, date, slug, ext = *last_post.match(POST_REGEXP)              
+      m, cats, date, slug, ext = *old_post.match(POST_REGEXP)              
       new_file = File.join('_posts', "#{date}-#{new_slug}#{ext}")      
-      
-      puts "writing to #{new_file}"
-      
+
+      sh "git mv #{old_post} #{new_file}"      
       File.open(new_file, "w") do |f|
         f << YAML.dump(data)
         f << "---\n"
         f << content
       end      
+      puts "#{old_post} => #{new_file}"                        
     else
-      puts "no title found"
+      puts "no old title found"
     end
   end
 end
 
+
+def ensure_committed
+  system "git diff --quiet HEAD"
+  raise "uncommited changes detected, please commit your changes first!" unless $?.success?
+end
 
 def extract_date(fname)
   m, cats, date, slug, ext = *fname.match(POST_REGEXP)
