@@ -160,9 +160,7 @@ Writing Android specs using a Scala framework like ScalaTest is a very convenien
 
 Another nifty feature is continuous compilation / testing. When you prefix any action with a tilde (~), sbt will automatically trigger it as soon as one of the source files changes, which is very useful when doing test-driven development.
 
-###Feedback
-
-If you have any comments / feedback or bug reports, the project is hosted on [github.com/jberkel/android-plugin](http://github.com/jberkel/android-plugin).
+###Demo
 
 <object width="100%" height="400">
   <param name="allowfullscreen" value="true"/>
@@ -171,3 +169,5 @@ If you have any comments / feedback or bug reports, the project is hosted on [gi
   <embed src="http://vimeo.com/moogaloop.swf?clip_id=8448112&amp;server=vimeo.com&amp;show_title=1&amp;show_byline=1&amp;show_portrait=0&amp;color=&amp;fullscreen=1" type="application/x-shockwave-flash" allowfullscreen="true" allowscriptaccess="always" width="100%" height="400">  
   </embed>
 </object>
+
+[github.com/jberkel/android-plugin](http://github.com/jberkel/android-plugin)
