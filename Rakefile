@@ -35,7 +35,7 @@ end
 
 desc "rebuild, then deploy to remote"
 task :deploy => [ :clean, :build ] do
-  sh "rsync -var --checksum _site/ zegoggl.es:/var/www/zegoggles.com"
+  sh "rsync -var --checksum _site/ zegoggl.es:/var/www/zegoggl.es/_site"
 end
 
 desc "clean"
