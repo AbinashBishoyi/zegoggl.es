@@ -1,6 +1,6 @@
---- 
+---
 title: Last.fm wordle tag clouds
-categories: 
+categories:
 layout: post
 ---
 
@@ -10,8 +10,8 @@ In order to play a bit with the [last.fm API](http://www.last.fm/api) and [sinat
 I created a little microapp which lets you visualise your listening history (recent tracks, top tracks...)
 in a beautiful word cloud, using the well-known [wordle](http://www.wordle.net/) service.
 
-Check it out on [/last_fm/wordle](/lastfm_wordle).
+Check it out: [lastfm-wordle.heroku.com](http://lastfm-wordle.heroku.com).
 
 Mine looks like this:
 
-<img src="/lastfm_wordle/cdr_jameson.png" width="100%"/>
+<img src="http://lastfm-wordle.heroku.com/cdr_jameson.png" width="100%"/>
