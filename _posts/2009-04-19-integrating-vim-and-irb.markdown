@@ -58,5 +58,5 @@ Update #2 (24/05/09): FFI on JRuby is a bit buggy (at least on Mac OS X), I
 filed a bug report ([JRUBY-3665](http://jira.codehaus.org/browse/JRUBY-3665)). It kind of works, but the invocation of vim fails
 from time to time on this platform.
 
-Update #3 (04/05/10): It's not a problem with FFI but the JVM: you cannot fork and reliably execute Java code afterwards. A workaround is to use posix_spawn, as shown here: [spoon.rb](http://github.com/headius/spoon/blob/master/lib/spoon.rb). I've updated [gist.github.com/98765](http://gist.github.com/98765) accordingly.
+Update #3 (04/05/10): It's not a problem with FFI but the JVM: you cannot fork and reliably execute Java code afterwards (cf. [JRUBY-3665](http://jira.codehaus.org/browse/JRUBY-3665) ). A workaround is to use posix_spawn, as shown here: [spoon.rb](http://github.com/headius/spoon/blob/master/lib/spoon.rb). I've updated [gist.github.com/98765](http://gist.github.com/98765) accordingly.
 
