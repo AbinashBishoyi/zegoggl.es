@@ -60,3 +60,12 @@ from time to time on this platform.
 
 Update #3 (04/05/10): It's not a problem with FFI but the JVM: you cannot fork and reliably execute Java code afterwards (cf. [JRUBY-3665](http://jira.codehaus.org/browse/JRUBY-3665) ). A workaround is to use posix_spawn, as shown here: [spoon.rb](http://github.com/headius/spoon/blob/master/lib/spoon.rb). I've updated [gist.github.com/98765](http://gist.github.com/98765) accordingly.
 
+### Demo
+
+<object width="100%" height="400">
+  <param name="allowfullscreen" value="true"/>
+  <param name="allowscriptaccess" value="always"/>
+  <param name="movie" value="http://vimeo.com/moogaloop.swf?clip_id=11446371&amp;server=vimeo.com&amp;show_title=1&amp;show_byline=1&amp;show_portrait=0&amp;color=&amp;fullscreen=1" />
+  <embed src="http://vimeo.com/moogaloop.swf?clip_id=11446371&amp;server=vimeo.com&amp;show_title=1&amp;show_byline=1&amp;show_portrait=0&amp;color=&amp;fullscreen=1" type="application/x-shockwave-flash" allowfullscreen="true" allowscriptaccess="always" width="100%" height="400">
+  </embed>
+</object>
