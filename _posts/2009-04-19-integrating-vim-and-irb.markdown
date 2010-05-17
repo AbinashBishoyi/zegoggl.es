@@ -60,6 +60,8 @@ from time to time on this platform.
 
 Update #3 (04/05/10): It's not a problem with FFI but the JVM: you cannot fork and reliably execute Java code afterwards (cf. [JRUBY-3665](http://jira.codehaus.org/browse/JRUBY-3665) ). A workaround is to use posix_spawn, as shown here: [spoon.rb](http://github.com/headius/spoon/blob/master/lib/spoon.rb). I've updated [gist.github.com/98765](http://gist.github.com/98765) accordingly.
 
+Update #4 (17/05/10): The gist has been turned into a gem ([interactive_editor](http://github.com/jberkel/interactive_editor)), see vimcast episode 20: [Running Vim within IRB](http://vimcasts.org/e/20).
+
 ### Demo
 
 <object width="100%" height="400">
