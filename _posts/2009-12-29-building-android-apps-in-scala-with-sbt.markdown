@@ -24,6 +24,8 @@ First you need to install sbt itself (assuming that Scala is already installed).
   </code>
 </pre> 
 
+If you're on OS X and use [homebrew](http://github.com/mxcl/homebrew) you can take a shortcut with `brew install sbt`.
+
 ###Generating a new project
 
 To get started with new projects sbt already ships with a generator which will set up the initial directory structure (run sbt without arguments). Unfortunately, when using plugins the situation is a bit more complicated as the plugin itself needs to be set up. To make things simpler I created a Scala script to bootstrap a full Android project with sbt. You simply call it with the name of your project and package:
