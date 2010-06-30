@@ -24,7 +24,7 @@ $(document).ready( function () {
           rating += ")";
         }
 
-        $("#currently-reading").append("<a href='" + items[i]['link']  + "'><img src='" + items[i]['book_small_image_url'] + "' class='left-img' /></a>")        
+        $("#currently-reading").append("<a href='" + items[i]['link']  + "'><img src='" + items[i]['book_small_image_url'] + "' class='right-img' /></a>")        
         $("#currently-reading").append("<p>&laquo;" + "<a href='" + items[i]['link'] + "'>" + items[i]['y:title'] + "</a>"+ "&raquo;" +
           " by " + items[i]['author_name']  + rating + "</p>");
 

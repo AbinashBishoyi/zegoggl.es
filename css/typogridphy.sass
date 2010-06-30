@@ -1,25 +1,29 @@
-/* +----------------------------------------------------------------------------------------------------+
-/* |                                                                                                    |
-/* |    TYPOGRIDPHY - TYPOGRAPHICAL AND GRID LAYOUT CSS FRAMEWORK FROM HARRY ROBERTS OF CSS WIZARDRY    |
-/* |                                                                                                    |
-/* +-------------------------------------------------+--------------------------------------------------+
-/* |                                                 |                                                  |
-/* |   TYPOGRIDPHY IS © COPYRIGHT OF HARRY ROBERTS   |   v 0.1.1                                        |
-/* |   IT IS FREE TO BE USED AND MODIFIED PROVIDED   |   May 2008                                       |
-/* |   THIS TEXT REMAINS INTACT -- CSSWIZARDRY.COM   |   http://csswizardry.com                         |
-/* |                                                 |                                                  |
-/* +-------------------------------------------------+--------------------------------------------------+
- 
+$base-width: 88em
+$font-size: 0.9em
+
+html
+  :min-height 101%
+  :font-size 100%
+
+#wrapper
+  :width $base-width
+  :margin 0 auto
+
+
+#header
+  :width $base-width
+  :padding-top 1.5em
+  :margin-bottom 2em
+
 body
   :margin 0
   :padding 0
-  :font-size 62.5%
   :font-family Georgia, "Times New Roman", serif
+  :font-size 80%
   :color #000
   :background #fff
-  :border-top 0.5em solid #666
   :padding 0 1em
-
+  :text-align left
 
 div, dl, dt, dd
   :margin 0
@@ -30,11 +34,11 @@ ul
   :margin 1em
   :padding 0
   :margin-bottom 1.8em
-  :list-style square inside
 
   li
     :font-size 1.2em
     :line-height 1.5em
+    :list-style square inside
 
     &.caption
       :font-variant small-caps
@@ -231,27 +235,22 @@ img
     :margin-left 2em
     :margin-top 0.3em
 
-
 address
   :font-style normal
   :font-weight normal
-
 
 caption
   :font-style normal
   :font-weight normal
   :text-align left
 
-
 cite, code, dfn, em, strong, var
   :font-style normal
   :font-weight normal
 
-
 q
   &:before, &:after
     :content ''
-
 
 abbr
   :border 0
@@ -259,30 +258,11 @@ abbr
   :border-color inherit
   :cursor help
 
-
 acronym
   :border 0
 
-
-html
-  :font-size 100%
-  :min-height 101%
-
-
-#wrapper
-  :width 94em
-  :margin 0 auto
-
-
-#header
-  :width 94em
-  :padding-top 1.5em
-  :margin-bottom 2em
-
-
 #nav
   :font-size 2em
-
   a
     :font-variant small-caps
 
@@ -319,61 +299,49 @@ html
     :font-style italic
     :font-weight inherit
 
-
 .clear
   :clear both
   :clear both
-
 
 .end
   :margin-left 0 !important
   :margin-right 0 !important
 
-
 .twotwenty
   :width 22em
   :margin-right 2em
-
 
 .twoeighty
   :width 28em
   :margin-right 2em
 
-
 .threeforty
   :width 34em
   :margin-right 2em
-
 
 .fourhun
   :width 40em
   :margin-right 2em
 
-
 .foursixty
   :width 46em
   :margin-right 2em
-
 
 .fivetwenty
   :width 52em
   :margin-right 2em
 
-
 .fiveeighty
   :width 58em
   :margin-right 2em
-
 
 .sixforty
   :width 64em
   :margin-right 2em
 
-
 .sevenhun
   :width 70em
   :margin-right 2em
-
 
 .sevensixty
   :width 76em
@@ -384,15 +352,12 @@ html
   :width 82em
   :margin-right 2em
 
-
 .eighteighty
   :width 88em
   :margin-right 2em
 
-
 .nineforty
   :width 94em
-
 
 .amp
   :font-family Baskerville, "Goudy Old Style", "Palatino", "Book Antiqua", serif
@@ -413,5 +378,15 @@ html
   :margin-left 0
 
 
-  
-  
+/* +----------------------------------------------------------------------------------------------------+
+/* |                                                                                                    |
+/* |    TYPOGRIDPHY - TYPOGRAPHICAL AND GRID LAYOUT CSS FRAMEWORK FROM HARRY ROBERTS OF CSS WIZARDRY    |
+/* |                                                                                                    |
+/* +-------------------------------------------------+--------------------------------------------------+
+/* |                                                 |                                                  |
+/* |   TYPOGRIDPHY IS © COPYRIGHT OF HARRY ROBERTS   |   v 0.1.1                                        |
+/* |   IT IS FREE TO BE USED AND MODIFIED PROVIDED   |   May 2008                                       |
+/* |   THIS TEXT REMAINS INTACT -- CSSWIZARDRY.COM   |   http://csswizardry.com                         |
+/* |                                                 |                                                  |
+/* +-------------------------------------------------+--------------------------------------------------+
+

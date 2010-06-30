@@ -4,7 +4,7 @@
 ---
 
 If you're thinking about developing Android apps in Scala there are not that many different options for building your project - I started out with a hack
-based on Rake ([source](http://github.com/jberkel/android-helloworld-scala/blob/master/Rakefile)), then there are some ways to get Eclipse to build your project, as documented on the [Novoda blog](http://www.novoda.com/blog/?p=154). I personally don't use an IDE, Scala is in contrast to Java perfectly usable in a normal text editor, mainly because it requires a lot less typing and boiler plate code. 
+based on Rake ([source](http://github.com/jberkel/android-helloworld-scala/blob/master/Rakefile)), then there are some ways to get Eclipse to build your project, as documented on the [Novoda blog](http://www.novoda.com/blog/?p=154). I personally don't use an IDE, Scala is in contrast to Java perfectly usable in a normal text editor, mainly because it requires a lot less typing and boiler plate code.
 
 My solution based on Rake worked well but had a couple of shortcomings - it added another language to the codebase, and not everyone is necessarily familiar with Ruby, additionally your build time gets longer as the Scala compiler will always perform a full rebuild of the project. A Scala source file typically produces more than just one single class file, so it's not possible to perform a simple time stamp-based check and just recompile changed files. Unfortunately the compiler itself is not able to figure out which files need rebuilding (coming in Scala 2.8). The Scala based build system [sbt](http://code.google.com/p/simple-build-tool/) (simple build tool) implements partial recompilation which means that the code will get built a lot faster. Besides speed improvements it also gives you a complete build tool with external dependency management using [Apache Ivy](http://ant.apache.org/ivy/) (Maven dependencies are supported as well).
 
@@ -22,7 +22,7 @@ First you need to install sbt itself (assuming that Scala is already installed).
   $ echo 'java -Xmx512M -jar `dirname $0`/sbt-launch-0.7.1.jar "$@"' > sbt
   $ chmod u+x sbt
   </code>
-</pre> 
+</pre>
 
 If you're on OS X and use [homebrew](http://github.com/mxcl/homebrew) you can take a shortcut with `brew install sbt`.
 
@@ -36,10 +36,10 @@ To get started with new projects sbt already ships with a generator which will s
   $ cd android-plugin
   $ script/create_project foo com.example.android
   </code>
-</pre>  
+</pre>
 
 This will create a fully usable Android project called Foo with one activity (showing Hello World).
-  
+
 
 The generated directory layout follows Maven conventions:
 
@@ -74,29 +74,30 @@ The sbt build configuration is in the *project* directory, source code and unit 
 
 ###Build configuration
 
-The main project build information is contained in the file *project/build/Foo.scala*: 
+The main project build information is contained in the file *project/build/Foo.scala*:
 
 <pre>
   <code class="scala">
-    import sbt._
+  import sbt._
 
-    trait Defaults {
-      def androidPlatformName = "android-1.6"
+  trait Defaults {
+    def androidPlatformName = "android-1.6"
+  }
+  class Foo(info: ProjectInfo) extends ParentProject(info) {
+    override def shouldCheckOutputDirectories = false
+    override def updateAction = task { None }
+
+    lazy val main  = project(".", "foo", new MainProject(_))
+    lazy val tests = project("tests",  "tests", new TestProject(_), main)
+
+    class MainProject(info: ProjectInfo) extends AndroidProject(info) with Defaults {
+      val scalatest = "org.scalatest" % "scalatest" % "1.0" % "test"
     }
-    class Foo(info: ProjectInfo) extends ParentProject(info) {
-      override def shouldCheckOutputDirectories = false
-      override def updateAction = task { None }
-      
-      lazy val main  = project(".", "foo", new MainProject(_))
-      lazy val tests = project("tests",  "tests", new TestProject(_), main)
 
-      class MainProject(info: ProjectInfo) extends AndroidProject(info) with Defaults {    
-        val scalatest = "org.scalatest" % "scalatest" % "1.0" % "test"
-      }
-
-      class TestProject(info: ProjectInfo) extends AndroidTestProject(info) with Defaults
-    }
-  </code>     
+    class TestProject(info: ProjectInfo) extends AndroidTestProject(info)
+                                         with Defaults
+  }
+  </code>
 </pre>
 
 The project definition is contained in the class Foo which extends ParentProject, a special sbt construct for supporting multiple projects in one single file ([sub project documentation](http://code.google.com/p/simple-build-tool/wiki/SubProjects)). This is necessary because Android integration tests have to be built and installed as a separate apk package. Note the use of Scala's traits to mix in default settings for both projects. If you don't need integration tests in your application you can use a simpler project definition which could look like this:
@@ -105,10 +106,10 @@ The project definition is contained in the class Foo which extends ParentProject
   <code class="scala">
   import sbt.__
   class Foo(info: ProjectInfo) extends AndroidProject(info) {
-    override def androidPlatformName = "android-1.6"    
+    override def androidPlatformName = "android-1.6"
   }
   </code>
-</pre>  
+</pre>
 
 ###Dependency management
 
@@ -118,7 +119,7 @@ The main advantage of using sbt/Ivy as a dependency manager is that you declare 
   <code class="scala">
    val scalatest = "org.scalatest" % "scalatest" % "1.0" % "test->default"
   </code>
-</pre>   
+</pre>
 
 This declares a dependency to the module "scalatest" (a Scala test framework), using version 1.0 in the test configuration. A configuration in Ivy works similar to scopes in Maven, you usually use them to separate build and runtime dependencies (sbt will automatically exclude build dependencies from the package).
 
@@ -137,7 +138,7 @@ Besides creating the necessary directory structure for building Scala projects t
     }
   }
   </code>
-</pre>  
+</pre>
 
 In order to build the full package, use the package-debug sbt action:
 
@@ -156,7 +157,7 @@ Sbt will automatically recompile the project definition (even when in interactiv
 
 ###1,2,3 testing
 
-Sbt has built-in support for most common Scala testing frameworks (ScalaCheck, specs, ScalaTest). It tries to automatically detect the framework you are using in your project, usually "sbt test" will do the Right Thing. The example project set up by the script defaults to [ScalaTest](http://www.scalatest.org/) which has excellent BDD support with a DSL similar to rspec's. 
+Sbt has built-in support for most common Scala testing frameworks (ScalaCheck, specs, ScalaTest). It tries to automatically detect the framework you are using in your project, usually "sbt test" will do the Right Thing. The example project set up by the script defaults to [ScalaTest](http://www.scalatest.org/) which has excellent BDD support with a DSL similar to rspec's.
 
 Writing Android specs using a Scala framework like ScalaTest is a very convenient way to test generic functionality, but does not replace running tests on the device / emulator itself. The DalvikVM is very different from a normal Java VM (smaller stack sizes etc.), so you should always test on device as well. On Android this is quite painful: you have to create a separate project, get the dependencies right, install the package in the emulator and run a command. With sbt's multiproject support it becomes quite easy to handle integration tests, you can subclass AndroidTestProject to get some additional actions for running tests (*test-emulator* and *test-device*). Sbt will also track dependencies between your main and test project.
 
@@ -168,7 +169,7 @@ Another nifty feature is continuous compilation / testing. When you prefix any a
   <param name="allowfullscreen" value="true"/>
   <param name="allowscriptaccess" value="always"/>
   <param name="movie" value="http://vimeo.com/moogaloop.swf?clip_id=8448112&amp;server=vimeo.com&amp;show_title=1&amp;show_byline=1&amp;show_portrait=0&amp;color=&amp;fullscreen=1" />
-  <embed src="http://vimeo.com/moogaloop.swf?clip_id=8448112&amp;server=vimeo.com&amp;show_title=1&amp;show_byline=1&amp;show_portrait=0&amp;color=&amp;fullscreen=1" type="application/x-shockwave-flash" allowfullscreen="true" allowscriptaccess="always" width="100%" height="400">  
+  <embed src="http://vimeo.com/moogaloop.swf?clip_id=8448112&amp;server=vimeo.com&amp;show_title=1&amp;show_byline=1&amp;show_portrait=0&amp;color=&amp;fullscreen=1" type="application/x-shockwave-flash" allowfullscreen="true" allowscriptaccess="always" width="100%" height="400">
   </embed>
 </object>
 
