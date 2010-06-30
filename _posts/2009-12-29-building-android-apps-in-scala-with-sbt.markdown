@@ -18,8 +18,8 @@ First you need to install sbt itself (assuming that Scala is already installed).
 <pre>
   <code class="bash">
   $ cd ~/bin # or any other directory in your path
-  $ wget http://simple-build-tool.googlecode.com/files/sbt-launch-0.7.1.jar
-  $ echo 'java -Xmx512M -jar `dirname $0`/sbt-launch-0.7.1.jar "$@"' > sbt
+  $ wget http://simple-build-tool.googlecode.com/files/sbt-launch-0.7.4.jar
+  $ echo 'java -Xmx512M -jar `dirname $0`/sbt-launch-0.7.4.jar "$@"' > sbt
   $ chmod u+x sbt
   </code>
 </pre>
