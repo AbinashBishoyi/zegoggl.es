@@ -59,6 +59,20 @@ $(document).ready( function () {
       }
 
     });
+
+  // posterous
+  $.getJSON("http://pipes.yahoo.com/pipes/pipe.run?_id=e52ee258ff99ea75545cdbc8d14a51fc&_render=json&_callback=?",
+    function (payload) {
+      var items = payload['value']['items'];
+      if (items.length > 0) {
+        $("#my-eyez").append("<ul>");
+        var ul = $("#my-eyez > ul");
+        for (var i=0; i<items.length; i++) {
+          ul.append("<li><a href='" + items[i].link + "'>" + items[i].title + "</a></li>");
+        }
+        $("#my-eyez").append("</ul>");
+      }
+  });
 });
 
 
