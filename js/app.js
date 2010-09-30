@@ -51,9 +51,10 @@ $(document).ready( function () {
           var matches = items[i].title.match(/(.+) pushed to (.+) at (.+)$/);
           if (matches) {
             ul.append("<li>" +
-              "<a href='" + items[i].link + "'>" + matches[3] + "</a>" +
-              " " + $.fn.getTwitter.relative_time(Date.parseISO8601(items[i].published)) +
-            "</li>");
+              "<a href='" + items[i].link + "'>" + matches[3] + "</a> " +
+              "<span class='time'>" +
+              $.fn.getTwitter.relative_time(Date.parseISO8601(items[i].published)) +
+              "</span></li>");
           }
         }
         $("#currently-coding").append("</ul>");
@@ -70,7 +71,9 @@ $(document).ready( function () {
         var ul = $("#my-eyez > ul");
         for (var i=0; i<items.length; i++) {
           ul.append("<li><a href='" + items[i].link + "'>" + items[i].title + "</a> " +
-                     $.fn.getTwitter.relative_time(new Date(items[i].pubDate)) + "</li>");
+                     "<span class='time'>" +
+                     $.fn.getTwitter.relative_time(new Date(items[i].pubDate)) +
+                     "</span></li>");
         }
         $("#my-eyez").append("</ul>");
       }

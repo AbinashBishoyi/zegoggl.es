@@ -111,17 +111,19 @@
     delta = delta + (relative_to.getTimezoneOffset() * 60);
 
     if (delta < 60) {
-      return 'less than a minute ago';
-    } else if(delta < 120) {
-      return 'about a minute ago';
-    } else if(delta < (60*60)) {
+      return 'just now';
+    } else if (delta < 120) {
+      return 'a minute ago';
+    } else if (delta < (60*60)) {
       return (parseInt(delta / 60, 10)).toString() + ' minutes ago';
-    } else if(delta < (120*60)) {
-      return 'about an hour ago';
-    } else if(delta < (24*60*60)) {
-      return 'about ' + (parseInt(delta / 3600, 10).toString() + ' hours ago');
-    } else if(delta < (48*60*60)) {
+    } else if (delta < (120*60)) {
+      return 'an hour ago';
+    } else if (delta < (24*60*60)) {
+      return (parseInt(delta / 3600, 10).toString() + ' hours ago');
+    } else if (delta < (48*60*60)) {
       return '1 day ago';
+    } else if (delta > (50*24*60*60)) {
+      return Math.round(delta / (86400 * 30)) +  ' months ago';
     } else {
       return (parseInt(delta / 86400, 10)).toString() + ' days ago';
     }
