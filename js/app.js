@@ -1,4 +1,4 @@
-$(document).ready( function () {  
+$(document).ready( function () {
   $("#tweets").getTwitter({
     userName: "jberkel",
     numTweets: 2,
@@ -7,24 +7,24 @@ $(document).ready( function () {
     showProfileLink: false,
     rejectRepliesOutOf: 20
   });
-    
+
   // goodreads
   $.getJSON("http://pipes.yahoo.com/pipes/pipe.run?_id=xL8fCU4_3hGJGTah3nBDOQ&_render=json&_callback=?",
     function (payload) {
 
       var items = payload['value']['items'];
       for (var i=0; i<items.length; i++) {
-        var rating = "";        
+        var rating = "";
         var rCount = parseInt(items[i]['user_rating'], 10);
         if (rCount > 0) {
           rating += " (";
           for (var r=0; r<rCount; r++) {
-            rating += "&#9733;";                
+            rating += "&#9733;";
           }
           rating += ")";
         }
 
-        $("#currently-reading").append("<a href='" + items[i]['link']  + "'><img src='" + items[i]['book_small_image_url'] + "' class='right-img' /></a>")        
+        $("#currently-reading").append("<a href='" + items[i]['link']  + "'><img src='" + items[i]['book_small_image_url'] + "' class='right-img' /></a>")
         $("#currently-reading").append("<p>&laquo;" + "<a href='" + items[i]['link'] + "'>" + items[i]['y:title'] + "</a>"+ "&raquo;" +
           " by " + items[i]['author_name']  + rating + "</p>");
 
@@ -36,28 +36,28 @@ $(document).ready( function () {
         $("#currently-reading").append("<div class='clear'/>");
       }
     });
-  
+
   // github
   $.getJSON("http://pipes.yahoo.com/pipes/pipe.run?_id=3991313993c87ab012f6b190f6b9c513&_render=json&_callback=?",
     function (payload) {
-      
+
       var items = payload['value']['items'];
       if (items.length > 0) {
         $("#currently-coding").append("<ul>");
         var ul = $("#currently-coding > ul");
-                  
-        for (var i=0; i<items.length; i++) {            
+
+        for (var i=0; i<items.length; i++) {
           var matches = items[i].title.match(/(.+) pushed to (.+) at (.+)$/);
-          if (matches) {          
+          if (matches) {
             ul.append("<li>" +
-              "<a href='" + items[i].link + "'>" + matches[3] + "</a>" +  
+              "<a href='" + items[i].link + "'>" + matches[3] + "</a>" +
               " " + $.fn.getTwitter.relative_time(Date.parseISO8601(items[i].published)) +
             "</li>");
           }
         }
         $("#currently-coding").append("</ul>");
       }
-      
+
     });
 });
 
@@ -68,7 +68,7 @@ Date.parseISO8601 = function(dString) {
 
   var regexp = /(\d\d\d\d)(-)?(\d\d)(-)?(\d\d)(T)?(\d\d)(:)?(\d\d)(:)?(\d\d)(\.\d+)?(Z|([+-])(\d\d)(:)?(\d\d))/;
   var date = new Date;
-  
+
   var d = dString.toString().match(regexp);
   if (d) {
     var offset = 0;
@@ -93,9 +93,9 @@ Date.parseISO8601 = function(dString) {
   else {
     date.setTime(Date.parse(dString));
   }
-  
+
   return date;
 };
 
-    
+
 
