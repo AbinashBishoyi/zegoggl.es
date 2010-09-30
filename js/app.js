@@ -28,8 +28,9 @@ $(document).ready( function () {
         $("#currently-reading").append("<p>&laquo;" + "<a href='" + items[i]['link'] + "'>" + items[i]['y:title'] + "</a>"+ "&raquo;" +
           " by " + items[i]['author_name']  + rating + "</p>");
 
-        if (items[i]['user_review'] !== null) {
-          $("#currently-reading").append("<blockquote>&ldquo;" + items[i]['user_review'] + "&rdquo;</blockquote>");
+        var review = items[i]['user_review'];
+        if (review && review !== "") {
+          $("#currently-reading").append("<blockquote>&ldquo;" + review + "&rdquo;</blockquote>");
         }
 
         $("#currently-reading").append("</div>");
@@ -68,7 +69,8 @@ $(document).ready( function () {
         $("#my-eyez").append("<ul>");
         var ul = $("#my-eyez > ul");
         for (var i=0; i<items.length; i++) {
-          ul.append("<li><a href='" + items[i].link + "'>" + items[i].title + "</a></li>");
+          ul.append("<li><a href='" + items[i].link + "'>" + items[i].title + "</a> " +
+                     $.fn.getTwitter.relative_time(new Date(items[i].pubDate)) + "</li>");
         }
         $("#my-eyez").append("</ul>");
       }
@@ -107,7 +109,6 @@ Date.parseISO8601 = function(dString) {
   else {
     date.setTime(Date.parse(dString));
   }
-
   return date;
 };
 
