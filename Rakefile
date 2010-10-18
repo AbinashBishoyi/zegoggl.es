@@ -14,7 +14,7 @@ END
 
 module Slugalizer
   extend self
-  SEPARATORS = %w[- _ +]  
+  SEPARATORS = %w[- _ +]
   def slugalize(text, separator = "-")
     raise "Word separator must be one of #{SEPARATORS}" unless SEPARATORS.include?(separator)
     re_separator = Regexp.escape(separator)
@@ -54,8 +54,7 @@ end
 desc "push to git repo(s)"
 task :push do
   ensure_committed
-  sh "git push" 
-  sh "git push github"
+  sh "git push"
 end
 
 desc "spellcheck last post"
@@ -66,32 +65,32 @@ end
 desc "renames blog post (defaut: most recent or POST=)"
 task :rename do
   ensure_committed
-  
-  old_post = ENV['POST'] || last_post  
+
+  old_post = ENV['POST'] || last_post
   post = IO.read(old_post)
-  if post =~ /^(---\s*\n.*?\n?)(---.*?\n)/m    
+  if post =~ /^(---\s*\n.*?\n?)(---.*?\n)/m
     content = post[($1.size + $2.size)..-1]
     data = YAML.load($1) || {}
-    
-    if data['title']      
+
+    if data['title']
       new_title = ENV['TITLE'] || begin
         puts "Old title: '#{data['title']}'\nEnter new title:"
         STDIN.gets.strip
       end
-      
+
       data['title'] = new_title
       new_slug = Slugalizer.slugalize(new_title)
-      
-      m, cats, date, slug, ext = *old_post.match(POST_REGEXP)              
-      new_file = File.join('_posts', "#{date}-#{new_slug}#{ext}")      
 
-      sh "git mv #{old_post} #{new_file}"      
+      m, cats, date, slug, ext = *old_post.match(POST_REGEXP)
+      new_file = File.join('_posts', "#{date}-#{new_slug}#{ext}")
+
+      sh "git mv #{old_post} #{new_file}"
       File.open(new_file, "w") do |f|
         f << YAML.dump(data)
         f << "---\n"
         f << content
-      end      
-      puts "#{old_post} => #{new_file}"                        
+      end
+      puts "#{old_post} => #{new_file}"
     else
       puts "no old title found"
     end
@@ -99,11 +98,11 @@ task :rename do
 end
 
 task :set_date do
-  ensure_committed  
+  ensure_committed
   old_post = ENV['POST'] || last_post
-  m, cats, date, slug, ext = *old_post.match(POST_REGEXP)                
-  tstamp = ENV['TIMESTAMP'] || Time.now.strftime('%Y-%m-%d')  
-  new_file = File.join('_posts', "#{tstamp}-#{slug}#{ext}")    
+  m, cats, date, slug, ext = *old_post.match(POST_REGEXP)
+  tstamp = ENV['TIMESTAMP'] || Time.now.strftime('%Y-%m-%d')
+  new_file = File.join('_posts', "#{tstamp}-#{slug}#{ext}")
   sh "git mv #{old_post} #{new_file}" unless old_post == new_file
 end
 
@@ -113,7 +112,7 @@ task :post do
     puts "Enter post title:"
     STDIN.gets.strip
   end
-  
+
   slug = Slugalizer.slugalize(title)
   tstamp = Time.now.strftime('%Y-%m-%d')
   fname = "#{tstamp}-#{slug}.markdown"
