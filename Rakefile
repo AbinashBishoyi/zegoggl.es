@@ -1,5 +1,6 @@
 require 'time'
 require 'erb'
+require 'yaml'
 
 POST_REGEXP = /^(.+\/)*(\d+-\d+-\d+(?:_\d+-\d+)?)-(.*)(\.[^.]+)$/
 TEMPLATE = <<END
