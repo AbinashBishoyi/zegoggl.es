@@ -63,6 +63,12 @@ task :check do
   sh "aspell", "--mode", "html", "--dont-backup", "check", last_post
 end
 
+desc "edits blog post (defaut: most recent or POST=)"
+task :edit do
+  post = ENV['POST'] || last_post
+  sh ENV['EDITOR'], post
+end
+
 desc "renames blog post (defaut: most recent or POST=)"
 task :rename do
   ensure_committed
