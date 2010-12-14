@@ -2,26 +2,28 @@
   title: "100 Records That Set The World On Fire (while no one was listening)"
 ---
 
-From the Wire #175, September 1998: [100 Records That Set The World On Fire](http://www.thewire.co.uk/issues/175/) 
+From the Wire #175, September 1998: [100 Records That Set The World On Fire](http://www.thewire.co.uk/issues/175/)
 ([scans](http://web.archive.org/web/20070613181856/www.rtxarchive.com/archive/articles/wire175_1_scans.html)).
 
 >"In The Wire 175, we polled our writers to nominate records that
 >should have ignited the world's imagination - but somehow got forgotten
 >along the way."
-		
-		
-List obtained from different places ([1](http://www.fastnbulbous.com/wire100.htm), 
-[2](http://www.listology.com/feif-umgotnn/list/wires-100-albums-set-world-fire-while-no-one-was-listening-30-runners-were-left-ou)). 
-Where the album was available on Spotify I linked the album, otherwise the artist. If you need more structured data, check the
-[Google docs spreadsheet](http://spreadsheets.google.com/ccc?key=0At-v8_qu4q4VdC10UGtRbEp2ZWlyb3ZmUHhidTBtMkE). I'm in the process 
-of autogenerating and annotating this list with information from different sources, but it's not quite ready yet.
+
+
+List obtained from different places
+([1](http://www.fastnbulbous.com/wire100.htm),
+[2](http://www.listology.com/feif-umgotnn/list/wires-100-albums-set-world-fire-while-no-one-was-listening-30-runners-were-left-ou)).
+Where the album was available on Spotify I linked the album, otherwise the
+artist. If you need more structured data, check the [Google docs spreadsheet][].
+I'm in the process of autogenerating and annotating this list with information
+from different sources, but it's not quite ready yet.
 
 Enjoy!
 
 * [Charles Ives](http://open.spotify.com/artist/73s17iW5LTtXRMVoofi9sU) - Symphony No. 4 (1910-16) (Grammophon, 1988)
 * Blind Willie Johnson - [Dark Was The Night, Cold Was The Ground](http://open.spotify.com/album/3H90ji25FlT62CztiEOhrt) (Columbia, 1929)
 * Bob Graettinger - City Of Glass/This Modern World (Capitol, 1953)
-* Louis & Bebe Barron - [Forbidden Planet OST](http://open.spotify.com/album/3zQQtu3a9Y7ZEDAKcftznw) (Small Planet, 1956) 
+* Louis & Bebe Barron - [Forbidden Planet OST](http://open.spotify.com/album/3zQQtu3a9Y7ZEDAKcftznw) (Small Planet, 1956)
 * [Esquivel And His Orchestra](http://open.spotify.com/artist/42kHi9ZIpRGtgjP8ZB4jsi) - Other Worlds Other Sounds (RCA, 1958)
 * The Blue Men - I Hear A New World (RGM White Label/RPM, 1960)
 * [Joe Harriott](http://open.spotify.com/artist/5tNoK2u8Dy9r46ROj9C9Lb) - Abstract (Columbia/Capitol, 1961)
@@ -131,12 +133,12 @@ The 30 others that did not make it into the original article:
 * Lowell Davidson - Lowell Davidson Trio (ESP Disk, 1965)
 * Dead Can Dance - [The Serpent's Egg](http://open.spotify.com/album/0WtlTZFY4KLwZXNelU4JnO) (4AD CD, 1988)
 * Eric Dolphy - [Out To Lunch](http://open.spotify.com/album/1mZ7wiVWcmlt5OMCxO6gqv) (Blue Note, 1964)
-* Bob Dylan - Live At The Manchester Free Trade Hall (Columbia, 1966) 
+* Bob Dylan - Live At The Manchester Free Trade Hall (Columbia, 1966)
 * The 49 Americans - We Know Nonsense (Quartz LP, 1982)
 * Jimmy Giuffre - [Free Fall](http://open.spotify.com/album/7d9MEv41oQKUzq8DAIu59W) (Columbia, 1962)
 * Golden Gate Jubilee Quartet - [Golden Gate Gospel Train](http://open.spotify.com/album/7vx2PjXPT6gV3RehHJFIYw) (Bluebird, 1937)
 * Hot Gossip - The Hollywood Jungle (DinDisc unreleased, 1981)
-* [Howlin Wolf](http://open.spotify.com/artist/0Wxy5Qka8BN9crcFkiAxSR) - The Howlin' Wolf Album (Chess/Cadet, 1968) 
+* [Howlin Wolf](http://open.spotify.com/artist/0Wxy5Qka8BN9crcFkiAxSR) - The Howlin' Wolf Album (Chess/Cadet, 1968)
 * Lee Konitz - [Motion](http://open.spotify.com/album/6Nm9fXaRQIDCtAMeWEk0Ij) (Verve, 1961)
 * Labradford - A Stable Reference (Kranky/Flying Nun, 1995)
 * Last Exit - [Last Exit](http://open.spotify.com/album/5wrqUL1OERv5YwE6tQJKqO) (Enemy, 1986)
@@ -153,3 +155,4 @@ The 30 others that did not make it into the original article:
 * [Marva Whitney](http://open.spotify.com/artist/691nF1fI0SKCfsIypzFr7h) - It's My Thing (King, 1969)
 
 
+[Google docs spreadsheet]: http://spreadsheets.google.com/ccc?key=0At-v8_qu4q4VdC10UGtRbEp2ZWlyb3ZmUHhidTBtMkE

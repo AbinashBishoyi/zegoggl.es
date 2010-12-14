@@ -37,9 +37,11 @@ So: Zombies, Werewolves, Vampires: fight!
 
 ([dataset](http://tables.googlelabs.com/DataSource?dsrcid=24534/24534))
 
-Zombies are the undisputed leaders in this category, they occur in a lot of dreams. Are people fearing the
-[Zombie Apocalypse](http://en.wikipedia.org/wiki/Zombie_apocalypse)? There definitely is something very modern about the zombie myth,
-which is more present than older (or old-fashioned?) mythical creatures like vampires and werewolves.
+Zombies are the undisputed leaders in this category, they occur in a lot of
+dreams. Are people fearing the [Zombie
+Apocalypse](http://en.wikipedia.org/wiki/Zombie_apocalypse)? There definitely
+is something very modern about the zombie myth, which is more present than
+older (or old-fashioned?) mythical creatures like vampires and werewolves.
 
 You'll also notice regular spikes in the number reported dreams, which more or
 less coincide with weekends. People either dream more on weekends, or find more
@@ -53,9 +55,11 @@ year, visualised in the following graph:
   <img src="/images/pig_swine.png" alt="pig_swine" width="100%"/>
 </a>
 
-This is a very nice example of how current events (like the swine flu) make their way into the subconsciousness of our minds. 
-It's the zombie pig apocalypse! 
+This is a very nice example of how current events (like the swine flu) make
+their way into the subconsciousness of our minds.  It's the zombie pig
+apocalypse!
 
 Or as [pixistyx](http://twitter.com/pixistyx) says on twitter:
 
->"[this swine flu stuff is freaky.. you can tell its been on my mind alot becuase i had a damn dream about it only we turned into zombies.](http://twitter.com/pixistyx/statuses/1649189169)"
+>"[this swine flu stuff is freaky.. you can tell its been on my mind alot becuase i had a damn
+>dream about it only we turned into zombies.](http://twitter.com/pixistyx/statuses/1649189169)"
