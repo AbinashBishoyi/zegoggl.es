@@ -85,7 +85,8 @@ task :rename do
       m, cats, date, slug, ext = *old_post.match(POST_REGEXP)
       new_file = File.join('_posts', "#{date}-#{new_slug}#{ext}")
 
-      sh "git mv #{old_post} #{new_file}"
+      untracked = `git status --porcelain #{old_post}`[0..1] == '??'
+      sh "#{untracked ? '' : 'git'} mv #{old_post} #{new_file}"
       File.open(new_file, "w") do |f|
         f << YAML.dump(data)
         f << "---\n"
