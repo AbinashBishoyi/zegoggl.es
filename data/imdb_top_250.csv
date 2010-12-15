@@ -1,0 +1,251 @@
+name,rank,top_250_rank,kind,imdb_id,rating,director
+The Wizard of Oz (1939),1,121,movie,0032138,8.3,Victor Fleming
+Star Wars (1977),2,14,movie,0076759,8.8,George Lucas
+Cabiria (1914),3,None,movie,0003740,6.6,Giovanni Pastrone
+Psycho (1960),4,24,movie,0054215,8.7,Alfred Hitchcock
+King Kong (1933),5,244,movie,0024216,8.0,Merian C. Cooper
+Metropolis (1927),6,95,movie,0017136,8.4,Fritz Lang
+"""Star Trek"" (1966)",7,None,tv series,0060028,8.6,Marc Daniels
+Casablanca (1942),8,16,movie,0034583,8.8,Michael Curtiz
+Snow White and the Seven Dwarfs (1937),9,None,movie,0029583,7.9,William Cottrell
+2001: A Space Odyssey (1968),10,87,movie,0062622,8.4,Stanley Kubrick
+The Godfather (1972),11,2,movie,0068646,9.2,Francis Ford Coppola
+The Birth of a Nation (1915),12,None,movie,0004972,7.1,D.W. Griffith
+Shadow of a Doubt (1943),13,None,movie,0036342,8.1,Alfred Hitchcock
+Jaws (1975),14,112,movie,0073195,8.3,Steven Spielberg
+Snow White (1916/I),15,None,movie,0007361,6.4,J. Searle Dawley
+Apocalypse Now (1979),16,37,movie,0078788,8.6,Francis Ford Coppola
+Gone with the Wind (1939),17,151,movie,0031381,8.2,Victor Fleming
+The Merry Widow (1934),18,None,movie,0025493,7.6,Ernst Lubitsch
+The Searchers (1956),19,None,movie,0049730,8.1,John Ford
+Vertigo (1958),20,43,movie,0052357,8.6,Alfred Hitchcock
+Dr. No (1962),21,None,movie,0055928,7.3,Terence Young
+Touch of Evil (1958),22,122,movie,0052311,8.3,Orson Welles
+Chang: A Drama of the Wilderness (1927),23,None,movie,0017743,7.4,Merian C. Cooper
+The Exorcist (1973),24,201,movie,0070047,8.1,William Friedkin
+Citizen Kane (1941),25,36,movie,0033467,8.6,Orson Welles
+The Terminator (1984),26,167,movie,0088247,8.1,James Cameron
+Rosemary's Baby (1968),27,224,movie,0063522,8.1,Roman Polanski
+Bronenosets Potyomkin (1925),28,None,movie,0015648,8.1,Sergei M. Eisenstein
+Star Wars: Episode V - The Empire Strikes Back (1980),29,11,movie,0080684,8.8,Irvin Kershner
+The Lost World (1925),30,None,movie,0016039,7.1,Harry O. Hoyt
+A Clockwork Orange (1971),31,52,movie,0066921,8.5,Stanley Kubrick
+Frankenstein (1931),32,None,movie,0021884,8.0,James Whale
+"""Sesame Street"" (1969)",33,None,tv series,0063951,8.5,Lisa Simon
+La grande illusion (1937),34,None,movie,0028950,8.2,Jean Renoir
+Raiders of the Lost Ark (1981),35,22,movie,0082971,8.7,Steven Spielberg
+Night of the Living Dead (1968),36,None,movie,0063350,8.0,George A. Romero
+The Wizard of Oz (1925),37,None,movie,0016544,5.3,Larry Semon
+THX 1138 (1971),38,None,movie,0066434,6.8,George Lucas
+E.T.: The Extra-Terrestrial (1982),39,None,movie,0083866,7.9,Steven Spielberg
+The Poor Little Rich Girl (1917),40,None,movie,0008443,6.9,Maurice Tourneur
+The Tin Man (1935),41,None,movie,0027112,4.6,James Parrott
+Taxi Driver (1976),42,41,movie,0075314,8.6,Martin Scorsese
+"Il buono, il brutto, il cattivo. (1966)",43,4,movie,0060196,9.0,Sergio Leone
+The Battle at Elderbush Gulch (1913),44,None,movie,0003662,6.6,D.W. Griffith
+Singin' in the Rain (1952),45,77,movie,0045152,8.4,Stanley Donen
+On the Waterfront (1954),46,104,movie,0047296,8.4,Elia Kazan
+The General (1926),47,120,movie,0017925,8.4,Clyde Bruckman
+Ghost Busters (1984),48,None,movie,0087332,7.8,Ivan Reitman
+Tarzan the Ape Man (1932),49,None,movie,0023551,7.1,W.S. Van Dyke
+"His Majesty, the Scarecrow of Oz (1914)",50,None,movie,0004099,6.0,L. Frank Baum
+"""The Twilight Zone"" (1959)",51,None,tv series,0052520,9.5,John Brahm
+The Great Train Robbery (1903),52,None,movie,0000439,7.5,Edwin S. Porter
+Goldfinger (1964),53,None,movie,0058150,7.9,Guy Hamilton
+La dolce vita (1960),54,None,movie,0053779,8.1,Federico Fellini
+Alien (1979),55,46,movie,0078748,8.5,Ridley Scott
+"Nosferatu, eine Symphonie des Grauens (1922)",56,None,movie,0013442,8.1,F.W. Murnau
+The Shining (1980),57,49,movie,0081505,8.5,Stanley Kubrick
+Dr. Strangelove or: How I Learned to Stop Worrying and Love the Bomb (1964),58,33,movie,0057012,8.6,Stanley Kubrick
+Scarface (1983),59,157,movie,0086250,8.2,Brian De Palma
+Rocky (1976),60,213,movie,0075148,8.1,John G. Avildsen
+"""The Simpsons"" (1989)",61,None,tv series,0096697,9.0,Mark Kirkland
+Un chien andalou (1929),62,None,movie,0020530,8.0,Luis Buñuel
+Dracula (1931),63,None,movie,0021814,7.7,Tod Browning
+First Blood (1982),64,None,movie,0083944,7.5,Ted Kotcheff
+"""The Flintstones"" (1960)",65,None,tv series,0053502,8.0,Joseph Barbera
+"""Batman"" (1966)",66,None,tv series,0059968,7.7,Oscar Rudolph
+The Lost Patrol (1934),67,None,movie,0025423,7.0,John Ford
+I Am a Fugitive from a Chain Gang (1932),68,None,movie,0023042,8.1,Mervyn LeRoy
+Back to the Future (1985),69,72,movie,0088763,8.4,Robert Zemeckis
+Deliverance (1972),70,None,movie,0068473,7.9,John Boorman
+Rebecca (1940),71,107,movie,0032976,8.4,Alfred Hitchcock
+The Scarecrow (1920),72,None,movie,0011656,8.0,Edward F. Cline
+The Texas Chain Saw Massacre (1974),73,None,movie,0072271,7.5,Tobe Hooper
+The Bridge on the River Kwai (1957),74,79,movie,0050212,8.4,David Lean
+It's a Wonderful Life (1946),75,29,movie,0038650,8.7,Frank Capra
+"Sex, Lies, and Videotape (1989)",76,None,movie,0098724,7.1,Steven Soderbergh
+Dirty Harry (1971),77,None,movie,0066999,7.8,Don Siegel
+My Fair Lady (1964),78,None,movie,0058385,7.9,George Cukor
+Dumbo (1941),79,None,movie,0033563,7.5,Samuel Armstrong
+The Birds (1963),80,None,movie,0056869,7.9,Alfred Hitchcock
+College (1927),81,None,movie,0017765,7.2,James W. Horne
+Titanic (1997),82,None,movie,0120338,7.4,James Cameron
+Ben-Hur (1959),83,156,movie,0052618,8.2,William Wyler
+Pulp Fiction (1994),84,5,movie,0110912,9.0,Quentin Tarantino
+Rear Window (1954),85,20,movie,0047396,8.7,Alfred Hitchcock
+Aliens (1986),86,60,movie,0090605,8.5,James Cameron
+Algiers (1938),87,None,movie,0029855,7.0,John Cromwell
+Greed (1924),88,None,movie,0015881,8.1,Erich von Stroheim
+The Silence of the Lambs (1991),89,27,movie,0102926,8.7,Jonathan Demme
+The Circus (1928),90,None,movie,0018773,7.9,Charles Chaplin
+"""The X Files"" (1993)",91,None,tv series,0106179,9.0,Kim Manners
+Terminator 2: Judgment Day (1991),92,42,movie,0103064,8.5,James Cameron
+"""The Oprah Winfrey Show"" (1986)",93,None,tv series,0090493,6.0,Joseph C. Terry
+The Graduate (1967),94,159,movie,0061722,8.2,Mike Nichols
+The Bangville Police (1913),95,None,movie,0002659,5.5,Henry Lehrman
+The Matrix (1999),96,26,movie,0133093,8.7,Andy Wachowski
+Señora Tentación (1948),97,None,movie,0138096,6.7,José Díaz Morales
+"""The Brady Bunch"" (1969)",98,None,tv series,0063878,7.0,Oscar Rudolph
+Lawrence of Arabia (1962),99,48,movie,0056172,8.5,David Lean
+A Nightmare on Elm Street (1984),100,None,movie,0087800,7.4,Wes Craven
+"""Hallmark Hall of Fame"" (1951) {Pygmalion (#12.3)}",101,None,episode,0222304,7.8,George Schaefer
+North by Northwest (1959),102,38,movie,0053125,8.6,Alfred Hitchcock
+The Sound of Music (1965),103,None,movie,0059742,7.9,Robert Wise
+"""Gilligan's Island"" (1964)",104,None,tv series,0057751,7.8,Jack Arnold
+Bambi (1942),105,None,movie,0034492,7.6,James Algar
+West Side Story (1961),106,None,movie,0055614,7.8,Jerome Robbins
+From Here to Eternity (1953),107,None,movie,0045793,7.9,Fred Zinnemann
+Halloween (1978),108,None,movie,0077651,7.9,John Carpenter
+"""I Love Lucy"" (1951)",109,None,tv series,0043208,9.0,William Asher
+Mad Love (1935),110,None,movie,0026663,7.4,Karl Freund
+Blade Runner (1982),111,116,movie,0083658,8.3,Ridley Scott
+Mary Poppins (1964),112,None,movie,0058331,7.7,Robert Stevenson
+Star Wars: Episode VI - Return of the Jedi (1983),113,106,movie,0086190,8.3,Richard Marquand
+Close Encounters of the Third Kind (1977),114,None,movie,0075860,7.8,Steven Spielberg
+Shichinin no samurai (1954),115,13,movie,0047478,8.8,Akira Kurosawa
+Bride of Frankenstein (1935),116,None,movie,0026138,8.0,James Whale
+The Treasure of the Sierra Madre (1948),117,68,movie,0040897,8.5,John Huston
+5 Against the House (1955),118,None,movie,0048077,6.0,Phil Karlson
+Kagemusha (1980),119,None,movie,0080979,7.9,Akira Kurosawa
+His Trust Fulfilled (1911),120,None,movie,0001681,4.7,D.W. Griffith
+His Trust (1911),121,None,movie,0001680,5.3,D.W. Griffith
+Gojira (1954),122,None,movie,0047034,7.3,Ishirô Honda
+Spartacus (1960),123,None,movie,0054331,8.0,Stanley Kubrick
+Dreams of the Rarebit Fiend: The Pet (1921),124,None,movie,0012123,7.1,Winsor McCay
+The Maltese Falcon (1941),125,98,movie,0033870,8.4,John Huston
+Planet of the Apes (1968),126,None,movie,0063442,8.0,Franklin J. Schaffner
+The Sea Hawk (1924),127,None,movie,0015310,7.2,Frank Lloyd
+All Quiet on the Western Front (1930),128,210,movie,0020629,8.2,Lewis Milestone
+"Der Golem, wie er in die Welt kam (1920)",129,None,movie,0011237,7.4,Carl Boese
+In Like Flint (1967),130,None,movie,0061810,5.9,Gordon Douglas
+The Bells of St. Mary's (1945),131,None,movie,0037536,7.4,Leo McCarey
+Duel (1971) (TV),132,None,tv movie,0067023,7.7,Steven Spielberg
+Stachka (1925),133,None,movie,0015361,7.8,Sergei M. Eisenstein
+Oklahoma! (1955),134,None,movie,0048445,7.1,Fred Zinnemann
+At Land (1944),135,None,movie,0036618,7.4,Maya Deren
+Jurassic Park (1993),136,None,movie,0107290,7.9,Steven Spielberg
+Stagecoach (1939),137,None,movie,0031971,7.9,John Ford
+Paths of Glory (1957),138,51,movie,0050825,8.6,Stanley Kubrick
+"""Happy Days"" (1974)",139,None,tv series,0070992,7.7,Jerry Paris
+Saturday Night Fever (1977),140,None,movie,0076666,6.8,John Badham
+The Philadelphia Story (1940),141,241,movie,0032904,8.1,George Cukor
+8½ (1963),142,185,movie,0056801,8.2,Federico Fellini
+"""Doctor Who"" (1963)",143,None,tv series,0056751,8.6,Douglas Camfield
+M (1931),144,58,movie,0022100,8.6,Fritz Lang
+Moby Dick (1956),145,None,movie,0049513,7.4,John Huston
+Carrie (1976),146,None,movie,0074285,7.4,Brian De Palma
+Rebel Without a Cause (1955),147,None,movie,0048545,7.9,Nicholas Ray
+Superman (1978),148,None,movie,0078346,7.3,Richard Donner
+"""The Muppet Show"" (1976)",149,None,tv series,0074028,8.8,Peter Harris
+Pinocchio (1940),150,None,movie,0032910,7.7,Norman Ferguson
+21-87 (1964),151,None,movie,0222664,7.5,Arthur Lipsett
+"""Scooby Doo, Where Are You!"" (1969)",152,None,tv series,0063950,8.1,Joseph Barbera
+Animal Farm (1954),153,None,movie,0047834,7.1,Joy Batchelor
+Swing Your Lady (1938),154,None,movie,0030820,4.8,Ray Enright
+Shane (1953),155,None,movie,0046303,7.8,George Stevens
+The Karate Kid (1984),156,None,movie,0087538,6.9,John G. Avildsen
+"""Jeopardy!"" (1984)",157,None,tv series,0159881,8.6,Kevin McCarthy
+"""Leave It to Beaver"" (1957)",158,None,tv series,0050032,8.2,Norman Tokar
+Bonnie and Clyde (1967),159,None,movie,0061418,8.0,Arthur Penn
+One Flew Over the Cuckoo's Nest (1975),160,9,movie,0073486,8.9,Milos Forman
+"""Saturday Night Live"" (1975)",161,None,tv series,0072562,8.1,Dave Wilson
+C'era una volta il West (1968),162,21,movie,0064116,8.8,Sergio Leone
+Sunrise: A Song of Two Humans (1927),163,152,movie,0018455,8.4,F.W. Murnau
+The Lion King (1994),164,144,movie,0110357,8.2,Roger Allers
+Plane Crazy (1928),165,None,movie,0019278,7.5,Walt Disney
+"""60 Minutes"" (1968)",166,None,tv series,0123338,6.3,Rob Klug
+Lolita (1962),167,None,movie,0056193,7.7,Stanley Kubrick
+Die Hard (1988),168,109,movie,0095016,8.3,John McTiernan
+Laura (1944),169,None,movie,0037008,8.2,Otto Preminger
+Easy Rider (1969),170,None,movie,0064276,7.3,Dennis Hopper
+Invasion of the Body Snatchers (1956),171,None,movie,0049366,8.0,Don Siegel
+L'année dernière à Marienbad (1961),172,None,movie,0054632,7.8,Alain Resnais
+Lady in a Cage (1964),173,None,movie,0058283,6.8,Walter Grauman
+The Evil Dead (1981),174,None,movie,0083907,7.6,Sam Raimi
+"""The Tonight Show Starring Johnny Carson"" (1962)",175,None,tv series,0055708,8.3,Bobby Quinn
+Top Gun (1986),176,None,movie,0092099,6.6,Tony Scott
+You Only Live Twice (1967),177,None,movie,0062512,6.9,Lewis Gilbert
+From Russia with Love (1963),178,None,movie,0057076,7.5,Terence Young
+"""The Lone Ranger"" (1949)",179,None,tv series,0041038,8.1,Hollingsworth Morse
+Deep Throat (1972),180,None,movie,0068468,5.2,Gerard Damiano
+Shock Corridor (1963),181,None,movie,0057495,7.6,Samuel Fuller
+Enter the Dragon (1973),182,None,movie,0070034,7.6,Robert Clouse
+The Magnificent Seven (1960),183,None,movie,0054047,7.8,John Sturges
+Yôjinbô (1961),184,,,,,
+Underworld (1927),185,None,movie,0018526,7.7,Josef von Sternberg
+She Wore a Yellow Ribbon (1949),186,None,movie,0041866,7.3,John Ford
+Un témoin dans la ville (1959),187,None,movie,0052571,6.7,Edouard Molinaro
+Batman (1989),188,None,movie,0096895,7.6,Tim Burton
+Cinderella (1950),189,None,movie,0042332,7.4,Clyde Geronimi
+Tarzan's Magic Fountain (1949),190,None,movie,0041947,5.5,Lee Sholem
+High Noon (1952),191,139,movie,0044706,8.3,Fred Zinnemann
+Triumph des Willens (1935),192,None,movie,0025913,7.7,Leni Riefenstahl
+Mr. Smith Goes to Washington (1939),193,102,movie,0031679,8.4,Frank Capra
+Grease (1978),194,None,movie,0077631,7.0,Randal Kleiser
+Intolerance: Love's Struggle Throughout the Ages (1916),195,None,movie,0006864,8.1,D.W. Griffith
+Reservoir Dogs (1992),196,66,movie,0105236,8.4,Quentin Tarantino
+A Place in the Sun (1951),197,None,movie,0043924,7.8,George Stevens
+The Third Man (1949),198,64,movie,0041959,8.5,Carol Reed
+The Gold Rush (1925),199,163,movie,0015864,8.3,Charles Chaplin
+The Ten Commandments (1956),200,None,movie,0049833,7.9,Cecil B. DeMille
+My Darling Clementine (1946),201,None,movie,0038762,7.9,John Ford
+Sunset Blvd. (1950),202,32,movie,0043014,8.7,Billy Wilder
+Friday the 13th (1980/I),203,None,movie,0080761,6.3,Sean S. Cunningham
+The Great Escape (1963),204,108,movie,0057115,8.3,John Sturges
+Play Misty for Me (1971),205,None,movie,0067588,7.0,Clint Eastwood
+Jerry Maguire (1996),206,None,movie,0116695,7.3,Cameron Crowe
+The Enforcer (1951),207,None,movie,0043503,7.3,Bretaigne Windust
+Fantastic Voyage (1966),208,None,movie,0060397,6.8,Richard Fleischer
+Butch Cassidy and the Sundance Kid (1969),209,150,movie,0064115,8.2,George Roy Hill
+"""The Andy Griffith Show"" (1960)",210,None,tv series,0053479,8.6,Bob Sweeney
+The Blues Brothers (1980),211,None,movie,0080455,7.9,John Landis
+Forrest Gump (1994),212,34,movie,0109830,8.6,Robert Zemeckis
+Some Like It Hot (1959),213,78,movie,0053291,8.4,Billy Wilder
+"""American Idol: The Search for a Superstar"" (2002)",214,None,tv series,0319931,4.8,Bruce Gowers
+Fight Club (1999),215,17,movie,0137523,8.8,David Fincher
+Revenge of the Creature (1955),216,None,movie,0048554,5.1,Jack Arnold
+Chinatown (1974),217,67,movie,0071315,8.5,Roman Polanski
+The Wild Bunch (1969),218,195,movie,0065214,8.1,Sam Peckinpah
+The Lord of the Rings: The Fellowship of the Ring (2001),219,19,movie,0120737,8.8,Peter Jackson
+Mutiny on the Bounty (1935),220,None,movie,0026752,7.9,Frank Lloyd
+El (1953),221,None,movie,0045361,7.8,Luis Buñuel
+Full Metal Jacket (1987),222,85,movie,0093058,8.4,Stanley Kubrick
+The Pride and the Passion (1957),223,None,movie,0050858,5.5,Stanley Kramer
+This Is Spinal Tap (1984),224,None,movie,0088258,8.0,Rob Reiner
+Winchester '73 (1950),225,None,movie,0043137,7.8,Anthony Mann
+"""Star Trek: The Next Generation"" (1987)",226,None,tv series,0092455,8.8,Cliff Bole
+"""Kojak"" (1973)",227,None,tv series,0069599,7.3,Charles S. Dubin
+Gryozy (1915),228,None,movie,0005414,7.4,Yevgeni Bauer
+"""Baywatch"" (1989)",229,None,tv series,0096542,4.9,Gregory J. Bonann
+Heavy Metal (1981),230,None,movie,0082509,6.4,Gerald Potterton
+The Day the Earth Stood Still (1951),231,None,movie,0043456,8.0,Robert Wise
+Three Little Pigs (1933),232,None,movie,0024660,7.7,Burt Gillett
+The Public Enemy (1931),233,None,movie,0022286,7.8,William A. Wellman
+The Rocky Horror Picture Show (1975),234,None,movie,0073629,7.1,Jim Sharman
+Rain Man (1988),235,None,movie,0095953,8.0,Barry Levinson
+L'atalante (1934),236,None,movie,0024844,8.0,Jean Vigo
+Persona (1966),237,204,movie,0060827,8.2,Ingmar Bergman
+Dawn of the Dead (1978),238,None,movie,0077402,8.0,George A. Romero
+"""Bonanza"" (1959)",239,None,tv series,0052451,7.4,William F. Claxton
+Fatal Attraction (1987),240,None,movie,0093010,6.8,Adrian Lyne
+It! The Terror from Beyond Space (1958),241,None,movie,0051786,6.0,Edward L. Cahn
+"""Toast of the Town"" (1948)",242,None,tv series,0040053,8.3,John Moffitt
+The French Connection (1971),243,None,movie,0067116,7.9,William Friedkin
+Peter Pan (1953),244,None,movie,0046183,7.3,Clyde Geronimi
+"""Miami Vice"" (1984)",245,None,tv series,0086759,7.8,John Nicolella
+Star Wars: Episode I - The Phantom Menace (1999),246,None,movie,0120915,6.4,George Lucas
+Goodfellas (1990),247,15,movie,0099685,8.8,Martin Scorsese
+The Egyptian (1954),248,None,movie,0046949,6.2,Michael Curtiz
+"""Hawaii Five-O"" (1968)",249,None,tv series,0062568,7.6,Michael O'Herlihy
+"""Charlie's Angels"" (1976)",250,None,tv series,0073972,6.6,Dennis Donnelly
