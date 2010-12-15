@@ -83,3 +83,10 @@ Spotify (which were present this time) announced the new playlist API and ran a
 session to get feedback from potential users. Nice! You can find their current
 progress on github: [playlist-api](http://github.com/spotify/playlist-api). So
 it looks like this hack won't be needed for much longer.
+
+*Update (16/12/2010)*
+
+Sadly, Spotify still has no API. There is some discussion on the [issue
+tracker][].
+
+[issue tracker]: https://github.com/spotify/playlist-api/issues#issue/1
