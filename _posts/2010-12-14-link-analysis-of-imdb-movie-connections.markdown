@@ -40,8 +40,7 @@ PageRank.
 
 The tl;dnr version of the blog post: PageRank on a movie reference graph
 produces lists very similar to top film lists compiled by critics. The list he
-presents is also similar to mine, so I will not repeat it here (available as [CSV file][Top
-250 (CSV)]).
+presents is also similar to mine, so I will not repeat it here.
 
 As always, it is very hard to come up with novel ideas (or even just
 applications thereof) - there is a very high probability that somebody has
@@ -52,10 +51,10 @@ IMDB data set.
 
 ## Pretty graphs and weird numbers
 
-Interestingly, a look at the [Top 250 (CSV)][] list reveals a lot of
-well-known films but also some more obscure ones. How did they get on this
-list? It's not really obvious from the list data itself, you need to look at the
-connections to find out why.
+Interestingly, a look at the Top 250 ([Google doc][Top 250 (Google
+doc)] / [CSV][Top 250 (CSV)]) list reveals a lot of well-known films but also
+some more obscure ones. How did they get on this list? It's not really obvious
+from the list data itself, you need to look at the connections to find out why.
 
 <a href="/svg/imdb_top_250.svg">
   <img src="/images/21-87.png" alt="21-87 Graph" class="right-img"/>
@@ -86,7 +85,8 @@ films influenced the sound design of George Lucas' later films.
 
 I used [graphviz][] to show connections between top ranked films. Graphviz can
 output SVG, so it was pretty easy to create high quality vector documents which
-render in most modern browsers (all except Internet Explorer &lt; 9).
+render in most modern browsers (all except Internet Explorer &lt; 9, Android
+WebKit).
 
 There are a few different versions since more nodes means more edges and
 therefore less readability (I did not apply any sort of edge pruning):
@@ -130,12 +130,21 @@ basically just a glue Rakefile with some Python code to do the analysis part
      $ git clone git://github.com/jberkel/imdb-movie-links.git
      $ cd imdb-movie-links
      $ easy_install networkx imdbpy
-     $ brew install graphwiz wget   # OSX
+     $ brew install graphviz wget   # OSX/homebrew
      $ bundle install
      $ rake rank                    # CSV export ranking
      $ rake graph.svg MAX=50        # create a graph, max. 50 nodes
 
 Happy ranking!
+
+## What next?
+
+It would be interesting to do this kind of analysis with different media - for
+example music (look at sample references in a track) or even literature.
+
+The problem is to get a good dataset - the movie example works so well because
+the IMDB data has been collected by a lot of people, over the course of almost
+20 years now.
 
 [IMDB dataset]: http://www.imdb.com/interfaces#plain
 [The most important movies of all time]: http://thorehusfeldt.net/2010/08/17/the-most-important-movies-of-all-time/
@@ -155,4 +164,5 @@ Happy ranking!
 [Top 100 (SVG)]: /svg/imdb_top_100.svg
 [Top 250 (SVG)]: /svg/imdb_top_250.svg
 [Top 250 (CSV)]: /data/imdb_top_250.csv
+[Top 250 (Google doc)]: https://spreadsheets.google.com/ccc?key=0At-v8_qu4q4VdFFuQU9tRWJ5S2kwVzBGQzJNaGVKdVE&hl=en_GB
 [SNPP]: http://www.snpp.com/episodeguide.html
