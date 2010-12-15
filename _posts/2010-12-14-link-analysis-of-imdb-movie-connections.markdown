@@ -18,24 +18,24 @@ another film, like Humphrey Bogart's words "I think this is the beginning of a
 beautiful friendship" from Casablanca's famous ending.
 
 The current [IMDB dataset][] contains around one million of those references, far
-too many to visualise or comprehend easily. So how could this data filtered, to get to
-the interesting references and films?
+too many to visualise or comprehend easily. So how could this data be filtered,
+to get to the interesting films and references?
 
 ## Rank it!
 
 Now, if you look at film references as edges between nodes (films) in a graph you
 can apply existing algorithms like [PageRank][] to obtain a score for each film,
-similar to the way Google determines importance of web pages. An intentional
+similar to one of the ways Google determines importance of web pages. An intentional
 reference to another film is similar to citation in a book, or a link to another
 web page.
 
 I have had the idea to use graph algorithms to analyse the IMDB movie
-connections for a while now but only got around to actually doing it quite
-recently. Then, after a few days of coding and just before publishing this blog
-article I saw that somebody else had done more or less the same work, a few
-months earlier: In the blog post "[The most important movies of all time][]",
-Thore Husfeldt presents a list of important movies as determined by his
-[FilmRank][] algorithm which is (as the name suggest) pretty similar to
+connections for a while now but only started building something until quite
+recently. Then, after a few days of coding and just before publishing this
+blog article I saw that somebody else had done more or less the same work, a
+few months earlier: in the blog post "[The most important movies of all
+time][]", Thore Husfeldt presents a list of important movies as determined by
+his [FilmRank][] algorithm which is (as the name suggest) pretty similar to
 PageRank.
 
 The tl;dnr version of the blog post: PageRank on a movie reference graph
@@ -63,15 +63,15 @@ connections to find out why.
 
 One of the properties of PageRank is that important nodes distribute their
 importance to all nodes they link to. Now, if a very significant node (let's
-say [Star Wars][]) only links to a few other nodes, these nodes will be
-considered important as well. So in order to understand these rankings better we need
-to look at the links between nodes.
+say [Star Wars][]) links to a few other nodes, these nodes will be considered
+important as well. So in order to understand these rankings better we need to
+look at the links between nodes.
 
-So I created a few graphs with the top N films and all the connections in
+I created a few graphs with the top N films and all the connections in
 between them, filtering out unconnected nodes. In the graph on the side, I was
 curious about the film on the left, [21-87][]. I had never heard of it, but it
 is obviously ranked highly because Star Wars and [THX 1138][] refer to it.
-These films were both directed by George Lucas (THX 1138 was his first film),
+Both these films were directed by George Lucas (THX 1138 was his first film),
 so there had to be be some sort of connection.
 
 <a href="http://www.imdb.com/title/tt0222664/movieconnections">
@@ -79,10 +79,10 @@ so there had to be be some sort of connection.
 </a>
 
 A quick look at the movie connections page revealed two numerical references
-(Leia's Death Star cell number and a date), and after a quick Google
-I found the article "[21-87: How Arthur Lipsett influenced George Lucas’s
-career][]" which went on to explain how Lipsett's experimental
-short films influenced the sound design of George Lucas' later films.
+(Leia's Death Star cell number and a date), and a search for "21-87 George
+Lucas" finds the article "[21-87: How Arthur Lipsett influenced George
+Lucas’s career][]" which goes on to explain how Lipsett's experimental short
+films influenced the sound design of George Lucas' later films.
 
 I used [graphviz][] to show connections between top ranked films. Graphviz can
 output SVG, so it was pretty easy to create high quality vector documents which
