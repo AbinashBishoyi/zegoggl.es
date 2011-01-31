@@ -71,9 +71,9 @@ $(document).ready( function () {
         var ul = $("#my-eyez > ul");
         for (var i=0; i<items.length; i++) {
           ul.append("<li><a href='" + items[i].link + "'>" + items[i].title + "</a> " +
-                     "<span class='time'>" +
+                     "<div class='time'>" +
                      $.fn.getTwitter.relative_time(new Date(items[i].pubDate)) +
-                     "</span></li>");
+                     "</div></li>");
         }
         $("#my-eyez").append("</ul>");
       }

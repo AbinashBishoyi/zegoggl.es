@@ -28,6 +28,7 @@ module Slugalizer
 end
 
 task :default => :server
+task :publish => :deploy
 
 desc "build the site"
 task :build do
