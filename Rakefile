@@ -63,6 +63,7 @@ desc "spellcheck last post"
 task :check do
   sh "aspell", "--mode", "html", "--dont-backup", "check", last_post
 end
+task :spell => :check
 
 desc "edits blog post (defaut: most recent or POST=)"
 task :edit do

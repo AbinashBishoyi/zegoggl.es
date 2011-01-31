@@ -42,7 +42,7 @@ The results can now directly be used to create a new dynamic table or chart.
 To use this for your own application take a look at [acra-analysis.html][] and
 change the Spreadsheet link.  You will also need to set the sharing settings of
 the spreadsheet to 'Anyone with the link' or 'public'. If this project evolves
-further I'll eventually factor it out into a separate project.
+further I'll probably move it to a separate project.
 
 ## Rant
 
