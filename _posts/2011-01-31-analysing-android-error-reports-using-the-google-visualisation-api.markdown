@@ -13,7 +13,7 @@ width="300" class="right-img"/>
 [ACRA][] is a great little Android open source library which posts error
 reports (stack traces) from your application in the wild to a Google
 spreadsheet. It is an important tool especially given the limitation of Google's
-built-in error reporting (Android market aps / 2.2+ only).
+built-in error reporting (Android market apps / 2.2+ only).
 
 So with ACRA in place you can easily check all error reports, inspect stack traces and so
 on.
