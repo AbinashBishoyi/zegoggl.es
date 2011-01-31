@@ -114,7 +114,7 @@ task :set_date do
   sh "git mv #{old_post} #{new_file}" unless old_post == new_file
 end
 
-desc "new post"
+desc "new post [TITLE=]"
 task :post do
   title = ENV['TITLE'] || begin
     puts "Enter post title:"
