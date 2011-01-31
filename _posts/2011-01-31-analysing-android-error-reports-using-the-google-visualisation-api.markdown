@@ -15,7 +15,7 @@ reports (stack traces) from your application in the wild to a Google
 spreadsheet. It is an important tool especially given the limitation of Google's
 built-in error reporting (Android market aps / 2.2+ only).
 
-So with ACRA in place ou can easily check all error reports, inspect stack traces and so
+So with ACRA in place you can easily check all error reports, inspect stack traces and so
 on.
 
 What's missing however is the big picture - are there more crashes on Android 1.x
