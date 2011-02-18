@@ -7,13 +7,13 @@ title: zegoggl.es
     %address.vcard.author{:style=>'display:none;'}
       %a{:class=>"url fn", :href=>"http://zegoggl.es"}
         Jan Berkel
-        
+
     - site.collated_posts.sort.reverse.each do |year,months|
       .year
         %h2.year= year
         - months.sort.reverse.each do |month,days|
           %h3.month= Date::MONTHNAMES[month]
-          %ul.posts      
+          %ul.posts
             - days.sort.reverse.each do |day,posts|
               - posts.each do |post|
                 %li.hentry.entry
@@ -22,4 +22,4 @@ title: zegoggl.es
                   %span.entry-title
                     %a{:href=>post.url, :rel=>'bookmark'}
                       = h(post.title)
-                    
+
