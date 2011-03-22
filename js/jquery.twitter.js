@@ -41,7 +41,7 @@
     // show container element
     $(this).show();
     
-    $.getJSON("http://twitter.com/statuses/user_timeline/"+o.userName+".json?count="+(o.numTweets+10)+"&callback=?", 
+    $.getJSON("http://twitter.com/statuses/user_timeline.json?screen_name="+o.userName +"&count="+(o.numTweets+10)+"&trim_user=1&callback=?",
       function(tweets) {
         
       // remove preLoader from container element
@@ -60,7 +60,7 @@
           return  reply.charAt(0)+'<a href="http://twitter.com/'+reply.substring(1)+'">'+reply.substring(1)+'</a>';
         });
         statusHTML.push('<li><span>'+
-          status+'</span> <a style="font-size:85%" href="http://twitter.com/'+username+'/statuses/'+tweets[i].id+'">'+
+          status+'</span> <a style="font-size:85%" href="http://twitter.com/'+username+'/statuses/'+tweets[i].id_str+'">'+
             $.fn.getTwitter.relative_time(tweets[i].created_at)+
           '</a></li>');
       }
