@@ -171,6 +171,14 @@ and released and has already some users.
 You can find it in the [Android Market][gist-it] and the code on [github][].
 Fork away if you have any ideas for new features!
 
+So, what are Scala's chances in the wider Android ecosystem? There's no
+official word from Google yet but Tim Bray (Android developer advocate) is
+[very keen on supporting non-Java languages][Other Android Languages] on the
+platform. More and more developers are interested in Android but not everybody
+wants to use Java - Scala is an excellent alternative. A few success stories
+here and there, a high profile Android app implemented in Scala would be a good
+start.
+
 [sbt]: http://code.google.com/p/simple-build-tool/
 [gist]: https://gist.github.com/
 [building...]: http://zegoggl.es/2009/12/building-android-apps-in-scala-with-sbt.html
@@ -182,3 +190,5 @@ Fork away if you have any ideas for new features!
 [gist-it]: https://market.android.com/details?id=com.zegoggles.gist
 [github]: https://github.com/jberkel/gist-it
 [specs2]: http://etorreborre.github.com/specs2/
+[Other Android Languages]: http://www.tbray.org/ongoing/When/201x/2010/07/28/Ruby-and-Python-on-Android
+[scala-on-android]: https://groups.google.com/group/scala-on-android
