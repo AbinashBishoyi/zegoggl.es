@@ -151,6 +151,8 @@ using Android's AccountManager API:
     def token: Option[Token] = account.map(a =>
       Token(AccountManager.get(this).getPassword(a)))
   }
+
+  class MyActivity exends Activity with TokenHolder { ... }
   </code>
 </pre>
 
