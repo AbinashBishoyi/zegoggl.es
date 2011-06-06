@@ -35,7 +35,7 @@ In the meantime the Scala core team has realised that tool
 support is crucial for the wider adoption of the language and Martin Odersky
 (Scala's designer) is working on (and dogfooding) the Eclipse plugin. I've read somewhere
 that he was mostly using Emacs before - not something you can necessarily
-expect from average [Java Joe][].
+assume from average [Java Joe][].
 
 The Intellij Scala plugin is very functional and behaves mostly as you would
 expect - it has some nice features like highlighting of implicit parameters which
