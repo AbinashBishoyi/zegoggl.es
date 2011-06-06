@@ -181,6 +181,9 @@ wants to use Java - Scala is an excellent alternative. A few success stories
 here and there, a high profile Android app implemented in Scala would be a good
 start.
 
+There is now also a dedicated mailing list  ([scala-on-android][]) - still too small
+to be called community but hopefully growing faster.
+
 [sbt]: http://code.google.com/p/simple-build-tool/
 [gist]: https://gist.github.com/
 [building...]: http://zegoggl.es/2009/12/building-android-apps-in-scala-with-sbt.html
