@@ -152,7 +152,7 @@ using Android's AccountManager API:
       Token(AccountManager.get(this).getPassword(a)))
   }
 
-  class MyActivity exends Activity with TokenHolder { ... }
+  class MyActivity extends Activity with TokenHolder { ... }
   </code>
 </pre>
 
