@@ -89,4 +89,12 @@ it looks like this hack won't be needed for much longer.
 Sadly, Spotify still has no API. There is some discussion on the [issue
 tracker][].
 
+*Update (16/06/2011)*
+
+Guess what? Still no API. However I got pointed to a new Spotify API server
+project ([spotify-api-server][]) which wraps [libspotify][] and has playlist
+support.
+
+[libspotify]: http://developer.spotify.com/en/libspotify/
+[spotify-api-server]: https://github.com/liesen/spotify-api-server
 [issue tracker]: https://github.com/spotify/playlist-api/issues#issue/1
