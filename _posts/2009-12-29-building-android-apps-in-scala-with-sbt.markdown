@@ -3,6 +3,9 @@
   published: true
 ---
 
+*Note: this article hasn't been updated in a while and is out of date. In
+doubt refer to the README of the [android-plugin][].*
+
 If you're thinking about developing Android apps in Scala there are not that
 many different options for building your project - I started out with a hack
 based on Rake
@@ -252,4 +255,4 @@ development.
   </embed>
 </object>
 
-[github.com/jberkel/android-plugin](http://github.com/jberkel/android-plugin)
+[android-plugin]: https://github.com/jberkel/android-plugin
