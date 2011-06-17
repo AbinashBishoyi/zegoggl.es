@@ -184,6 +184,13 @@ start.
 There is now also a dedicated mailing list  ([scala-on-android][]) - still too small
 to be called community but hopefully growing faster.
 
+*Updated 17/06/2011:*
+
+I'll add some links to relevant new blog posts as I find them:
+
+  * [Scala: A Better Java for Android][]
+  * [Scala’s Popularity on the Rise in Boston: sbt for Android][]
+
 [sbt]: http://code.google.com/p/simple-build-tool/
 [gist]: https://gist.github.com/
 [building...]: http://zegoggl.es/2009/12/building-android-apps-in-scala-with-sbt.html
@@ -197,3 +204,6 @@ to be called community but hopefully growing faster.
 [specs2]: http://etorreborre.github.com/specs2/
 [Other Android Languages]: http://www.tbray.org/ongoing/When/201x/2010/07/28/Ruby-and-Python-on-Android
 [scala-on-android]: https://groups.google.com/group/scala-on-android
+
+[Scala’s Popularity on the Rise in Boston: sbt for Android]: http://bostinnovation.com/2011/06/16/scalas-popularity-on-the-rise-in-boston-sbt-for-android/
+[Scala: A Better Java for Android]: http://robots.thoughtbot.com/post/5836463058/scala-a-better-java-for-android
