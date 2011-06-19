@@ -190,6 +190,8 @@ I'll add some links to relevant new blog posts as I find them:
 
   * [Scala: A Better Java for Android][]
   * [Scala’s Popularity on the Rise in Boston: sbt for Android][]
+  * [How How we use Scala in Bump for Android][]
+
 
 [sbt]: http://code.google.com/p/simple-build-tool/
 [gist]: https://gist.github.com/
@@ -207,3 +209,4 @@ I'll add some links to relevant new blog posts as I find them:
 
 [Scala’s Popularity on the Rise in Boston: sbt for Android]: http://bostinnovation.com/2011/06/16/scalas-popularity-on-the-rise-in-boston-sbt-for-android/
 [Scala: A Better Java for Android]: http://robots.thoughtbot.com/post/5836463058/scala-a-better-java-for-android
+[How How we use Scala in Bump for Android]: http://devblog.bu.mp/how-we-use-scala-in-bump-for-android
