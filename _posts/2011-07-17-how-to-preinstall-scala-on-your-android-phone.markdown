@@ -149,7 +149,7 @@ a Nexus One.
 
 ### Install the new boot image
 
-    $ adb push boot-new.img /sdcard
+    $ adb push boot-new.img /sdcard/
     $ adb shell
 
     $ cat /dev/zero > /dev/mtd/mtd2
