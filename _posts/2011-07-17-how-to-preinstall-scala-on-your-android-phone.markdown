@@ -33,7 +33,7 @@ So "all" we need to do is to predexed the Scala library and append it to this pa
 
 St&eacute;phane Micheloud has done some work to make this step easy - he created
 a bunch of scripts to dex the libraries and create custom RAM images for the Android emulator, described in
-[Tweaking the Android emulator][], here a short summary:
+[Tweaking the Android emulator][]:
 
     $ git clone git://github.com/jberkel/android-sdk-scala.git
     $ cd android-sdk-scala
@@ -112,7 +112,8 @@ ramdisk. These parts can be extracted using a Perl script ([split_bootimg.pl][])
 
 Now the ramdisk needs to be unpacked:
 
-    $ mkdir ramdisk && cd ramdisk
+    $ mkdir ramdisk
+    $ cd ramdisk
     $ gzip -dc ../boot.img-ramdisk.gz | cpio -i
 
 You can now make changes to ramdisk/init.rc and add the Scala libraries to
@@ -132,7 +133,7 @@ BOOTCLASSPATH, it should look similar to this (without line breaks):
       /data/framework/scala-mutable.jar
 
 After you have made that change you need to reassemble the boot image. You will
-need two command line tools from the Android source code (which need to be
+need two command line tools from the Android source code to do that (which need to be
 compiled first, here a quick HOWTO: [compile mkbootimg/mkbootfs][]).
 
     $ mkbootfs ramdisk/ | gzip > newramdisk.gz
@@ -150,9 +151,11 @@ a Nexus One.
 
     $ adb push boot-new.img /sdcard
     $ adb shell
-    # cat /dev/zero > /dev/mtd/mtd2
-        write: No space left on device [this is ok, you can ignore]
-    # flash_image boot /sdcard/boot-new.img
+
+    $ cat /dev/zero > /dev/mtd/mtd2
+    write: No space left on device [this is ok, you can ignore]
+
+    $ flash_image boot /sdcard/boot-new.img
     flashing boot from /sdcard/boot-new.img
     mtd: successfully wrote block at 0
     mtd: successfully wrote block at 20000
@@ -182,14 +185,14 @@ using the [sbt-android-plugin][] just add the line
 to your project config ([example][project.scala]). This currently only works
 with the development version (0.5.2-SNAPSHOT).
 
-With proguard enabled:
+For comparison, a "hello world" Scala project, with proguard enabled:
 
     $ time sbt clean package-debug
     real    0m40.514s
     user    0m50.632s
     sys 0m2.345s
 
-Without:
+and without:
 
     $ time sbt clean package-debug
     real    0m16.507s
