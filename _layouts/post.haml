@@ -2,7 +2,7 @@
 layout: default
 ---
 #post
-  
+
   =header page.title
   %p.subtitle.metadata.vcard
     Published
@@ -10,10 +10,10 @@ layout: default
       = page.date.strftime("%B %d, %Y")
     / in
     / = tag_links(page.tags), "."
-   
-  -# Without the squiggly, Haml will indent highlighted code. 
+
+  -# Without the squiggly, Haml will indent highlighted code.
   ~ content
-  
+
   .clear
     #previous_and_next
       - if page.next
@@ -24,7 +24,7 @@ layout: default
         %p
           %strong Previous:
           =post_link(page.previous)
-  
+
   #disqus_thread
   %script{ :type => "text/javascript", :src => "http://disqus.com/forums/zegoggles/embed.js" }
   %noscript <a href="http://zegoggles.disqus.com/?url=ref">View the discussion thread.</a>
