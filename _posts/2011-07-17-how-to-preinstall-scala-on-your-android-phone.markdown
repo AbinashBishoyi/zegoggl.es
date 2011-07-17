@@ -1,5 +1,5 @@
 ---
-  title: "How to preinstall Scala on your Android phone"
+  title: "How to preinstall Scala on your (rooted) Android phone"
   published: true
 ---
 
@@ -8,8 +8,8 @@ runtime - Scala adds a few megabytes which need to be converted to Dalvik
 bytecode during the build process (slow!). The common workaround is to use tools like
 [proguard][] or [treeshaker][] to shrink the code before dexing it.
 
-However if this is still to slow there is another option which unfortunately
-only works on rooted devices and the Android emulator: predex the Scala
+However if this is still to slow there is another option which
+works on rooted devices and the Android emulator: predex the Scala
 libraries and add them to the Android runtime, on the device itself.
 
 Android has the concept of a boot classpath (similar to the JVM) which contains
