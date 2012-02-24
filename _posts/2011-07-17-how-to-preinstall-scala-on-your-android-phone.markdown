@@ -180,7 +180,8 @@ test with:
 Now you can enjoy reasonably fast development cycles on your device, when
 using the [sbt-android-plugin][] just add the line
 
-    override def skipProguard = true
+    override def skipProguard = true  # sbt 0.7.x
+    useProguard in Android := false   # sbt 0.1x
 
 to your project config ([example][project.scala]). This currently only works
 with the development version (0.5.2-SNAPSHOT).
